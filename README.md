@@ -27,7 +27,7 @@
 
 ## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
-<table>
+<table border="0" style="border: none;">
 <tr>
 <td width="60%" valign="top">
 
