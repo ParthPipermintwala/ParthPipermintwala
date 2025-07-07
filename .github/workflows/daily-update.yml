@@ -1,0 +1,45 @@
+name: Daily Profile Update
+
+on:
+  # run automatically every day at 2 AM UTC
+  schedule:
+    - cron: "0 2 * * *" 
+  
+  # allows to manually run the job at any time
+  workflow_dispatch:
+  
+  # run on every push to main branch
+  push:
+    branches:
+    - master
+    - main
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      # Update README timestamp to force cache refresh
+      - name: Update README timestamp
+        run: |
+          # Add a hidden comment with current timestamp to force cache refresh
+          echo "<!-- Profile updated: $(date) -->" >> README.md
+          
+      # Commit changes if any
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff --staged --quiet || git commit -m "Daily profile update - $(date)"
+          
+      # Push changes
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
