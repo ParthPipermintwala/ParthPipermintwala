@@ -42,7 +42,7 @@
 - 🧩 **Passionate About:** Problem Solving & UI/UX Design
 
 </td>
-<td width="40%" valign="top" align="center">
+<td width="40%" valign="middle" align="center">
 
 <!-- Animated Web Developer Banner -->
 
