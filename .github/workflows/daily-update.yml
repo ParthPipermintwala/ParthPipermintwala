@@ -1,0 +1,69 @@
+name: Daily README Update
+
+on:
+  # Run daily at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  
+  # Allow manual trigger
+  workflow_dispatch:
+  
+  # Run on push to main branch
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      # Set up Git configuration
+      - name: Setup Git
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+      # Update timestamp in README
+      - name: Update README timestamp
+        run: |
+          # Get current UTC timestamp
+          TIMESTAMP=$(date -u '+%a %b %d %H:%M:%S UTC %Y')
+          
+          # Update the timestamp in README.md
+          if grep -q "<!-- Profile updated:" README.md; then
+            # If timestamp exists, update it
+            sed -i "s/<!-- Profile updated:.*/<!-- Profile updated: $TIMESTAMP -->/g" README.md
+          else
+            # If no timestamp exists, add it at the end
+            echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
+          fi
+          
+      # Check if there are changes
+      - name: Check for changes
+        id: verify-diff
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+          
+      # Commit and push changes
+      - name: Commit changes
+        if: steps.verify-diff.outputs.changed == 'true'
+        run: |
+          git add README.md
+          git commit -m "Auto-update README timestamp"
+          git push

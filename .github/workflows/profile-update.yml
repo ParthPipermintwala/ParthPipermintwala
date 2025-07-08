@@ -1,0 +1,53 @@
+name: Profile README Generator
+
+on:
+  schedule:
+    # Run every day at 00:00 UTC
+    - cron: "0 0 * * *"
+  
+  workflow_dispatch:
+  
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  update-profile:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+      - name: Update README
+        run: |
+          # Update the timestamp
+          TIMESTAMP=$(date -u '+%a %b %d %H:%M:%S UTC %Y')
+          
+          # Check if README.md exists
+          if [ -f "README.md" ]; then
+            # Remove old timestamp lines
+            sed -i '/<!-- Profile updated:/d' README.md
+            
+            # Add new timestamp
+            echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
+            
+            # Check if there are changes
+            if ! git diff --quiet; then
+              git add README.md
+              git commit -m "Auto-update profile README"
+              git push
+            fi
+          fi
