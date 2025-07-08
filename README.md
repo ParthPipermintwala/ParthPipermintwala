@@ -43,10 +43,11 @@
 
 </div>
 
-<div style="flex: 0 0 350px; text-align: center;">
+<div style="flex: 0 0 350px; text-align: center; align-self: center;">
 
 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c83c004e-1370-4756-88e5-4071de797088/dgdq8br-09cc7ad6-a021-47a5-b0e0-917b12b0f7a7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4M2MwMDRlLTEzNzAtNDc1Ni04OGU1LTQwNzFkZTc5NzA4OFwvZGdkcThici0wOWNjN2FkNi1hMDIxLTQ3YTUtYjBlMC05MTdiMTJiMGY3YTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tqRMtE-b2QiI2nnefNxSDMJvZCcYqFmq2ccg_Xfzqb8" 
-     width="300" 
+     width="350" 
+     style="border-radius: 10px;"
      alt="Full Stack Development" />
 
 </div>
@@ -118,25 +119,45 @@
 
 <div align="center">
 
+<!-- Animated header -->
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=📊+My+GitHub+Journey;🔥+Coding+Statistics;⚡+Development+Metrics&cache_seconds=86400" alt="Stats Typing SVG" />
+
+<br><br>
+
 ### 🔥 Streak Stats
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" style="animation: fadeInUp 1s ease-out;" />
+
+<br><br>
 
 ### 📊 GitHub Analytics
 
-<div align="center">
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
 
+<div style="animation: slideInLeft 1s ease-out;">
 <img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
+</div>
 
-<br>
-
+<div style="animation: slideInRight 1s ease-out;">
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
+</div>
 
 </div>
 
+<br><br>
+
 ### 📈 Activity Graph
 
+<div style="animation: fadeInUp 1.5s ease-out;">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&bg_color=0d1117&color=fff&line=00b3ff&point=f9ca24&area=true&hide_border=true&custom_title=My%20GitHub%20Activity%20Graph" alt="Activity Graph" />
+</div>
+
+<br>
+
+<!-- Fun animated stats -->
+<div align="center" style="margin: 20px 0;">
+<img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=18&duration=3000&pause=1500&color=FF6B6B&center=true&vCenter=true&width=800&lines=🚀+Committed+to+Excellence;💻+Building+the+Future;⭐+Open+Source+Enthusiast;🌟+Always+Learning+and+Growing&cache_seconds=86400" alt="Stats Footer Typing SVG" />
+</div>
 
 </div>
 
@@ -162,7 +183,7 @@
   <img alt="GitHub Contribution Grid Snake Animation" 
        src="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake-dark.svg"
        width="100%"
-       style="max-width: 900px; background-color: #0d1117; border-radius: 8px; padding: 10px;">
+       style="max-width: 1000px; background-color: #0d1117; border-radius: 9px; padding: 0px;">
 </picture>
 
 <br>
