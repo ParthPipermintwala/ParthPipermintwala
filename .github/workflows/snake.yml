@@ -39,11 +39,17 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
+      # Show what was generated
+      - name: Show generated files
+        run: |
+          ls -la dist/
+          
       # Push the generated files to the output branch
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with:
           target_branch: output
           build_dir: dist
+          keep_history: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

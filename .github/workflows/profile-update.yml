@@ -6,15 +6,9 @@ on:
     - cron: "0 0 * * *"
   
   workflow_dispatch:
-  
-  push:
-    branches:
-    - main
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   update-profile:
@@ -38,16 +32,28 @@ jobs:
           
           # Check if README.md exists
           if [ -f "README.md" ]; then
+            # Create a backup
+            cp README.md README.md.bak
+            
             # Remove old timestamp lines
-            sed -i '/<!-- Profile updated:/d' README.md
+            grep -v "<!-- Profile updated:" README.md.bak > README.md
             
             # Add new timestamp
             echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
             
             # Check if there are changes
-            if ! git diff --quiet; then
+            if ! git diff --quiet README.md; then
               git add README.md
-              git commit -m "Auto-update profile README"
+              git commit -m "Auto-update profile README - $TIMESTAMP"
               git push
+              echo "README updated successfully"
+            else
+              echo "No changes to commit"
             fi
+            
+            # Clean up
+            rm -f README.md.bak
+          else
+            echo "README.md not found!"
+            exit 1
           fi

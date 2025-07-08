@@ -8,17 +8,21 @@ on:
   # Allow manual trigger
   workflow_dispatch:
   
-  # Run on push to main branch
+  # Run on push to main branch (but skip if commit message contains 'Auto-update')
   push:
     branches:
     - main
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    
+    # Skip if the push was from this action itself
+    if: "!contains(github.event.head_commit.message, 'Auto-update README timestamp')"
     
     steps:
       # Checkout the repository
@@ -26,12 +30,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
           
       # Set up Git configuration
       - name: Setup Git
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
           
       # Update timestamp in README
       - name: Update README timestamp
@@ -39,20 +44,24 @@ jobs:
           # Get current UTC timestamp
           TIMESTAMP=$(date -u '+%a %b %d %H:%M:%S UTC %Y')
           
-          # Update the timestamp in README.md
-          if grep -q "<!-- Profile updated:" README.md; then
-            # If timestamp exists, update it
-            sed -i "s/<!-- Profile updated:.*/<!-- Profile updated: $TIMESTAMP -->/g" README.md
-          else
-            # If no timestamp exists, add it at the end
-            echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
+          # Check if README.md exists
+          if [ ! -f "README.md" ]; then
+            echo "README.md not found!"
+            exit 1
           fi
+          
+          # Remove any existing timestamp lines
+          sed -i '/<!-- Profile updated:/d' README.md
+          
+          # Add new timestamp at the end
+          echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
           
       # Check if there are changes
       - name: Check for changes
         id: verify-diff
         run: |
-          if git diff --quiet; then
+          git add README.md
+          if git diff --cached --quiet; then
             echo "No changes to commit"
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -64,6 +73,5 @@ jobs:
       - name: Commit changes
         if: steps.verify-diff.outputs.changed == 'true'
         run: |
-          git add README.md
           git commit -m "Auto-update README timestamp"
-          git push
+          git push origin main
