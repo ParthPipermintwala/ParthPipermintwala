@@ -151,8 +151,6 @@
 
 <br>
 
-
-
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
@@ -201,7 +199,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=600&lines=💬+Open+to+Collaborations+%26+Opportunities;🚀+Always+Ready+to+Learn+%26+Grow;✨+Let's+Build+Something+Great+Together!&cache_seconds=86400" alt="Connect Typing SVG" />
 </p>
 
-### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25">  **Connect With Me**
+### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25"> **Connect With Me**
 
 <div align="center" style="margin-top: 5px;">
 <table style="border-collapse: collapse; margin: 0 auto;">
