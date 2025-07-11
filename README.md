@@ -1,26 +1,18 @@
 <div align="center">
   
-  <!-- Animated Banner -->
-  <img src="https://user-images.githubusercontent.com/90236635/232446433-d5540fa2-fe28-4bb8-b929-cdb51fe61336.gif" width="100%" height="170" style="object-fit:fit-content; max-width: 100%;" />
-  
-  <!-- Animated Header -->
- <h1 align="center" style="margin-top: 30px;">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=👋+Hey+There!+I'm+Parth+Bhavesh+Pipermintwala;🚀+Passionate+Full+Stack+Developer;💻+MERN+Stack+Enthusiast;🎓+IT+Student+and+Self-Taught+Coder;🌟+Always+Learning+Something+New;✨+Building+Amazing+Web+Applications&cache_seconds=86400" alt="Typing SVG" />
-  </h1>
+  <!-- Custom Header with Dynamic Gradient Background -->
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30,12,6,25,20,4&height=150&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%"/>
   <!-- Animated subtitle -->
-  <h2 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=22&duration=4000&pause=1500&color=FF6B6B&center=true&vCenter=true&width=500&lines=🎯+IT+Student+and+Problem+Solver;💡+Creative+Thinker+and+Code+Enthusiast;🌐+Web+Developer+and+Tech+Explorer;🚀+Innovation+Seeker+and+Future+Ready&cache_seconds=86400" alt="Subtitle Typing SVG" />
-  </h2>
+  <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=32&duration=4000&pause=1500&color=FF6B6B&center=true&vCenter=true&width=850&lines=🎯+IT+Student+and+Problem+Solver;🚀+Aspiring+Full+Stack+Developer;💻+MERN+Stack+Developer+(Learning);🌟+Passionate+About+Modern+Web+Technologies&cache_seconds=86400" alt="Subtitle Typing SVG" />
 
   <!-- Cool divider -->
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-  
-  <!-- Profile views -->
-  <div align="center" style="margin: 20px 0;">
-    <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=brightgreen&style=for-the-badge&cache_seconds=86400" alt="Profile Views" style="margin: 0 10px;" />
-    <img src="https://img.shields.io/github/followers/ParthPipermintwala?label=Followers&style=for-the-badge&color=blue&cache_seconds=86400" alt="GitHub Followers" style="margin: 0 10px;" />
+<br>
+<br>
+  <!-- Profile views with gradient background -->
+  <div align="right">
+     <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=0e75b6&style=flat&cache_seconds=86400" alt="Profile Views" width="150px"/>
   </div>
-  
 </div>
 
 
