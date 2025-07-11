@@ -4,11 +4,9 @@
   <img src="https://user-images.githubusercontent.com/90236635/232446433-d5540fa2-fe28-4bb8-b929-cdb51fe61336.gif" width="100%" height="170" style="object-fit:fit-content; max-width: 100%;" />
   
   <!-- Animated Header -->
-  <h1 align="center" style="margin-top: 30px;">
+ <h1 align="center" style="margin-top: 30px;">
     <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=900&lines=👋+Hey+There!+I'm+Parth+Bhavesh+Pipermintwala;🚀+Passionate+Full+Stack+Developer;💻+MERN+Stack+Enthusiast;🎓+IT+Student+and+Self-Taught+Coder;🌟+Always+Learning+Something+New;✨+Building+Amazing+Web+Applications&cache_seconds=86400" alt="Typing SVG" />
   </h1>
-
-
   <!-- Animated subtitle -->
   <h2 align="center">
     <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=22&duration=4000&pause=1500&color=FF6B6B&center=true&vCenter=true&width=500&lines=🎯+IT+Student+and+Problem+Solver;💡+Creative+Thinker+and+Code+Enthusiast;🌐+Web+Developer+and+Tech+Explorer;🚀+Innovation+Seeker+and+Future+Ready&cache_seconds=86400" alt="Subtitle Typing SVG" />
@@ -66,7 +64,7 @@
 
 <br><br>
 
-### <img src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" width="40"> **MERN Stack Expertise**
+### <img src="https://media.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif" width="40"> **MERN Stack Expertise (Learning)**
 
 <p align="center">
 <img src="https://skillicons.dev/icons?i=mongodb" width="60" height="60" alt="MongoDB" />
@@ -99,7 +97,6 @@
 <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB"/>
 <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C"/>
 <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
 </p>
 
 ### <img src="https://media.giphy.com/media/VTtANKl0beDFQRLDTh/giphy.gif" width="30"> **Development Tools**
@@ -154,10 +151,7 @@
 
 <br>
 
-<!-- Fun animated stats -->
-<div align="center" style="margin: 20px 0;">
-<img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=18&duration=3000&pause=1500&color=FF6B6B&center=true&vCenter=true&width=800&lines=🚀+Committed+to+Excellence;💻+Building+the+Future;⭐+Open+Source+Enthusiast;🌟+Always+Learning+and+Growing&cache_seconds=86400" alt="Stats Footer Typing SVG" />
-</div>
+
 
 </div>
 
@@ -207,58 +201,152 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=FF6B6B&center=true&vCenter=true&width=600&lines=💬+Open+to+Collaborations+%26+Opportunities;🚀+Always+Ready+to+Learn+%26+Grow;✨+Let's+Build+Something+Great+Together!&cache_seconds=86400" alt="Connect Typing SVG" />
 </p>
 
+### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25">  **Connect With Me**
+
+<div align="center" style="margin-top: 5px;">
+<table style="border-collapse: collapse; margin: 0 auto;">
+<tr>
+<td align="center" style="padding: 15px; min-width: 120px;">
+<a href="https://www.linkedin.com/in/parth-pipermintwala-403a82367/" style="text-decoration: none; color: inherit;">
+<img src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="LinkedIn"/>
+<br><strong style="font-size: 14px; margin-top: 8px; display: block;">LinkedIn</strong>
+</a>
+</td>
+<td align="center" style="padding: 15px; min-width: 120px;">
+<a href="https://github.com/ParthPipermintwala" style="text-decoration: none; color: inherit;">
+<img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="GitHub"/>
+<br><strong style="font-size: 14px; margin-top: 8px; display: block;">GitHub</strong>
+</a>
+</td>
+<td align="center" style="padding: 15px; min-width: 120px;">
+<a href="mailto:parthpipermintwala9@gmail.com" style="text-decoration: none; color: inherit;">
+<img src="https://cdn.dribbble.com/users/741934/screenshots/1941143/envelope.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="Email"/>
+<br><strong style="font-size: 14px; margin-top: 8px; display: block;">Email</strong>
+</a>
+</td>
+</tr>
+</table>
+</div>
+
+<!-- Mobile responsive version -->
+<div align="center" style="display: none;">
+<style>
+@media (max-width: 768px) {
+  .connect-desktop { display: none !important; }
+  .connect-mobile { display: block !important; }
+  .connect-mobile td { 
+    display: block; 
+    margin: 10px auto; 
+    width: 100px; 
+  }
+}
+</style>
+</div>
+
 <br>
 
-### 📫 **Connect With Me**
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/parth-pipermintwala-403a82367/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://github.com/ParthPipermintwala">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="mailto:parthpipermintwala9@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://github.com/ParthPipermintwala">
-    <img src="https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio"/>
-  </a>
-</p>
-
-<br>
-
-### 💡 **Quick Info**
+### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="25"> **Quick Info** <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="25">
 
 <div align="center">
-
-<div align="center" style="margin: 20px 0;">
-  <strong>💬 Ask me about:</strong><br><br>
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML"/>
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/MERN-Stack-success?style=flat-square" alt="MERN"/>
+<table style="border-collapse: collapse; margin: 0 auto; max-width: 100%;">
+<tr>
+<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
+<div style="background: linear-gradient(135deg, #61dafb, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+<img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" width="60" height="60" style="border-radius: 50%; margin-bottom: 8px;" alt="React"/>
+<br><strong style="color: #61dafb; font-size: 13px;">React</strong>
+</div>
+</td>
+<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
+<div style="background: linear-gradient(135deg, #68a063, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+<img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" width="60" height="60" style="border-radius: 50%; margin-bottom: 8px;" alt="Node.js"/>
+<br><strong style="color: #68a063; font-size: 13px;">Node.js</strong>
+</div>
+</td>
+<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
+<div style="background: linear-gradient(135deg, #f5f5f5, #e8e8e8); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+<img src="https://media4.giphy.com/media/KGQCBekFKkvLjlcC2g/100.gif" width="60" height="60" style="object-fit: contain; border-radius: 50%; margin-bottom: 8px; transform: scale(1.2);" alt="MongoDB"/>
+<br><strong style="color: #4faa41; font-size: 13px;">MongoDB</strong>
+</div>
+</td>
+<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
+<div style="background: linear-gradient(135deg, #ffffff, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
+<img src="https://www.manektech.com/storage/technology/image/1646733600.webp" width="60" height="60" style="object-fit: contain; border-radius: 50%; margin-bottom: 8px;" alt="Express.js"/>
+<br><strong style="color: #ffffff; font-size: 13px;">Express.js</strong>
+</div>
+</td>
+</tr>
+</table>
 </div>
 
-<div align="center" style="margin: 20px 0;">
-  <strong>👨‍💻 My Projects:</strong><br><br>
-  <a href="https://github.com/ParthPipermintwala">
-    <img src="https://img.shields.io/badge/GitHub-ParthPipermintwala-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-</div>
+<!-- Responsive CSS -->
+<style>
+@media (max-width: 768px) {
+  .tech-stack table {
+    display: block !important;
+  }
+  .tech-stack tr {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .tech-stack td {
+    display: block !important;
+    width: 45% !important;
+    margin: 5px !important;
+    min-width: 140px !important;
+  }
+}
 
-</div>
+@media (max-width: 480px) {
+  .tech-stack td {
+    width: 90% !important;
+    min-width: 200px !important;
+  }
+}
+</style>
 
 <br>
+
+<div align="center" style="margin: 20px 0;">
+  
+   ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> My Projects <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
+  
+  <!-- Live Projects -->
+  <div align="center" style="padding: 20px; max-width: 260px; margin: 0 auto;">
+  <div style="background: linear-gradient(135deg, #24292e, #0d1117); padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="70" height="70" style="border-radius: 50%; margin-bottom: 15px;" alt="GitHub"/>
+  <br><strong style="color: #58a6ff; font-size: 18px;">🌍Live Projects</strong>
+  <br><span style="color: #8b949e; font-size: 14px;">Check out my deployed applications & live demos</span>
+  <br><br>
+  <a href="https://github.com/ParthPipermintwala?tab=repositories" style="text-decoration: none;">
+  <img src="https://img.shields.io/badge/View_Live_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Live Projects"/>
+  </a>
+  </div>
+  </div>
+  
+  <br>
+
+</div>
+
+</div>
 
 ### 🚀 **Let's Collaborate!**
 
-<p align="center">
-  <img src="https://www.aalpha.net/wp-content/uploads/2020/12/full-stack-development.gif" width="400" style="max-width: 100%; height: auto;" alt="Full Stack Development">
-</p>
-
-<br>
+<div align="center" style="margin: 30px 0;">
+  
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=💡+Ready+to+build+something+amazing%3F;🚀+Let's+turn+ideas+into+reality!;✨+Great+projects+start+with+collaboration&cache_seconds=86400" alt="Collaborate Typing SVG" />
+  
+  <br>
+  
+  <div style="padding: 25px; border-radius: 20px; display: inline-block; max-width: 500px;">
+    <img src="https://www.aalpha.net/wp-content/uploads/2020/12/full-stack-development.gif" width="380" style="max-width: 100%; height: auto; border-radius: 15px;" alt="Full Stack Development">
+    <br><br>
+    <p style="color: #58a6ff; font-size: 16px; margin: 0; font-weight: 500;">
+      🌟 <strong>Always excited to work on innovative projects!</strong> 🌟
+    </p>
+  </div>
+  
+</div>
 
 </div>
 
