@@ -97,8 +97,6 @@
 <!-- Animated header -->
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=2000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=📊+My+GitHub+Journey;🔥+Coding+Statistics;⚡+Development+Metrics&cache_seconds=86400" alt="Stats Typing SVG" />
 
-<br><br>
-
 ### 🔥 Streak Stats
 
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" style="animation: fadeInUp 1s ease-out;" />
@@ -112,7 +110,7 @@
 <div style="animation: slideInLeft 1s ease-out;">
 <img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
 </div>
-
+<br><br>
 <div style="animation: slideInRight 1s ease-out;">
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
 </div>
@@ -179,108 +177,64 @@
 
 ### <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25"> **Connect With Me**
 
-<div align="center" style="margin-top: 5px;">
-<table style="border-collapse: collapse; margin: 0 auto;">
-<tr>
-<td align="center" style="padding: 15px; min-width: 120px;">
-<a href="https://www.linkedin.com/in/parth-pipermintwala-403a82367/" style="text-decoration: none; color: inherit;">
-<img src="https://cliply.co/wp-content/uploads/2021/02/372102050_LINKEDIN_ICON_TRANSPARENT_1080.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="LinkedIn"/>
-<br><strong style="font-size: 14px; margin-top: 8px; display: block;">LinkedIn</strong>
-</a>
-</td>
-<td align="center" style="padding: 15px; min-width: 120px;">
-<a href="https://github.com/ParthPipermintwala" style="text-decoration: none; color: inherit;">
-<img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="GitHub"/>
-<br><strong style="font-size: 14px; margin-top: 8px; display: block;">GitHub</strong>
-</a>
-</td>
-<td align="center" style="padding: 15px; min-width: 120px;">
-<a href="mailto:parthpipermintwala9@gmail.com" style="text-decoration: none; color: inherit;">
-<img src="https://cdn.dribbble.com/users/741934/screenshots/1941143/envelope.gif" width="80" height="80" style="border-radius: 10px; transition: transform 0.3s ease;" alt="Email"/>
-<br><strong style="font-size: 14px; margin-top: 8px; display: block;">Email</strong>
-</a>
-</td>
-</tr>
+<table align="center" border="0" cellpadding="10" cellspacing="0" >
+  <tr style="border:0 solid black; width:100%;">
+    <td align="center" style="border: none;">
+      <a href="https://www.linkedin.com/in/parth-pipermintwala-403a82367/" >
+        <img src="https://cdnl.iconscout.com/lottie/premium/thumb/linkedin-6875061-5607637.gif" width="100"  alt="LinkedIn" />
+      </a>
+      <br>
+     <a href="https://www.linkedin.com/in/parth-pipermintwala-403a82367/" ><strong >LinkedIn</strong></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/ParthPipermintwala">
+      <img src="https://nate-wilcox.github.io/images/github.gif" width="100"  alt="GitHub"/>
+      </a>
+      <br>
+       <a href="https://github.com/ParthPipermintwala"> <strong>GitHub</strong></a>
+    </td>
+    <td align="center">
+      <a href="mailto:parthpipermintwala9@gmail.com">
+        <img src="https://moein.video/wp-content/uploads/2022/12/Gmail-Logo-GIF-Gmail-Icon-GIF-Royalty-Free-Animated-Icon-GIF-1080px-after-effects-project.gif" width="100" alt="Email"/>
+      </a>
+      <br>
+       <a href="mailto:parthpipermintwala9@gmail.com"> <strong>Email</strong></a>
+    </td>
+  </tr>
 </table>
-</div>
-
-<!-- Mobile responsive version -->
-<div align="center" style="display: none;">
-<style>
-@media (max-width: 768px) {
-  .connect-desktop { display: none !important; }
-  .connect-mobile { display: block !important; }
-  .connect-mobile td { 
-    display: block; 
-    margin: 10px auto; 
-    width: 100px; 
-  }
-}
-</style>
-</div>
-
 <br>
 
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="25"> **Quick Info** <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="25">
-
 <div align="center">
-<table style="border-collapse: collapse; margin: 0 auto; max-width: 100%;">
+<table>
 <tr>
-<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
-<div style="background: linear-gradient(135deg, #61dafb, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-<img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" width="60" height="60" style="border-radius: 50%; margin-bottom: 8px;" alt="React"/>
+<td align="center">
+<div >
+<img src="https://media.giphy.com/media/eNAsjO55tPbgaor7ma/giphy.gif" width="60" height="60"  alt="React"/>
 <br><strong style="color: #61dafb; font-size: 13px;">React</strong>
 </div>
 </td>
-<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
-<div style="background: linear-gradient(135deg, #68a063, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-<img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" width="60" height="60" style="border-radius: 50%; margin-bottom: 8px;" alt="Node.js"/>
+<td align="center">
+<div>
+<img src="https://media.giphy.com/media/kdFc8fubgS31b8DsVu/giphy.gif" width="60" height="60"  alt="Node.js"/>
 <br><strong style="color: #68a063; font-size: 13px;">Node.js</strong>
 </div>
 </td>
-<td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
-<div style="background: linear-gradient(135deg, #f5f5f5, #e8e8e8); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-<img src="https://media4.giphy.com/media/KGQCBekFKkvLjlcC2g/100.gif" width="60" height="60" style="object-fit: contain; border-radius: 50%; margin-bottom: 8px; transform: scale(1.2);" alt="MongoDB"/>
+<td align="center">
+<div>
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd292YXZ3MmtvNXp4cGV2Y24zNWs4YzZiMWh5empiOTRoaW1qeXF1byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/tAjb5pyCEBhEb8jWxC/giphy.gif" width="60" height="60" alt="MongoDB"/>
 <br><strong style="color: #4faa41; font-size: 13px;">MongoDB</strong>
 </div>
 </td>
 <td align="center" style="padding: 15px; min-width: 120px; width: 25%;">
-<div style="background: linear-gradient(135deg, #ffffff, #21232a); padding: 15px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease;">
-<img src="https://www.manektech.com/storage/technology/image/1646733600.webp" width="60" height="60" style="object-fit: contain; border-radius: 50%; margin-bottom: 8px;" alt="Express.js"/>
+<div>
+<img src="https://tse4.mm.bing.net/th/id/OIP.1fZjQpkRMKTBGN_7H5YnFwHaGL?rs=1&pid=ImgDetMain&o=7&rm=3" width="60" height="60"  alt="Express.js"/>
 <br><strong style="color: #ffffff; font-size: 13px;">Express.js</strong>
 </div>
 </td>
 </tr>
 </table>
 </div>
-
-<!-- Responsive CSS -->
-<style>
-@media (max-width: 768px) {
-  .tech-stack table {
-    display: block !important;
-  }
-  .tech-stack tr {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-  }
-  .tech-stack td {
-    display: block !important;
-    width: 45% !important;
-    margin: 5px !important;
-    min-width: 140px !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .tech-stack td {
-    width: 90% !important;
-    min-width: 200px !important;
-  }
-}
-</style>
-
 <br>
 
 <div align="center" style="margin: 20px 0;">
@@ -288,17 +242,27 @@
    ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35"> My Projects <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="35">
   
   <!-- Live Projects -->
-  <div align="center" style="padding: 20px; max-width: 260px; margin: 0 auto;">
-  <div style="background: linear-gradient(135deg, #24292e, #0d1117); padding: 25px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="70" height="70" style="border-radius: 50%; margin-bottom: 15px;" alt="GitHub"/>
-  <br><strong style="color: #58a6ff; font-size: 18px;">🌍Live Projects</strong>
-  <br><span style="color: #8b949e; font-size: 14px;">Check out my deployed applications & live demos</span>
-  <br><br>
-  <a href="https://github.com/ParthPipermintwala?tab=repositories" style="text-decoration: none;">
-  <img src="https://img.shields.io/badge/View_Live_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Live Projects"/>
-  </a>
-  </div>
-  </div>
+<table align="center" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center">
+      <br>
+      <img src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="90" height="90" alt="GitHub" />
+      <br>
+      <strong >🌍Live Projects</strong>
+      <br>
+      <br>
+      <span>Check out my deployed </span>
+      <br>
+      <span>applications & live demos</span>
+      <br><br>
+      <a href="https://github.com/ParthPipermintwala?tab=repositories">
+        <img src="https://img.shields.io/badge/View_Live_Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Live Projects Badge" />
+      </a>
+      <br>
+    </td>
+  </tr>
+</table>
+
   
   <br>
 
