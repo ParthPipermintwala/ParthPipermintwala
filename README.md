@@ -25,9 +25,9 @@
 
 ## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
-<table>
-<tr>
-<td width="60%">
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start;">
+
+<div style="flex: 1 1 250px; min-width: 270px;">
 
 ### 🌟 Quick Facts About Me
 
@@ -39,17 +39,18 @@
 - 🎮 **Hobbies:** Gaming, Reading Tech Blogs, Building Side Projects
 - 🧩 **Passionate About:** Problem Solving & UI/UX Design
 
-</td>
-<td width="40%" align="center">
+</div>
+
+<div style="flex: 0 0 330px; text-align: center; align-self: center;">
 
 <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c83c004e-1370-4756-88e5-4071de797088/dgdq8br-09cc7ad6-a021-47a5-b0e0-917b12b0f7a7.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M4M2MwMDRlLTEzNzAtNDc1Ni04OGU1LTQwNzFkZTc5NzA4OFwvZGdkcThici0wOWNjN2FkNi1hMDIxLTQ3YTUtYjBlMC05MTdiMTJiMGY3YTcuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.tqRMtE-b2QiI2nnefNxSDMJvZCcYqFmq2ccg_Xfzqb8" 
      width="350" 
      style="border-radius: 10px;"
      alt="Full Stack Development" />
 
-</td>
-</tr>
-</table>
+</div>
+
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -122,27 +123,31 @@
 
 ### 🔥 Streak Stats
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" style="animation: fadeInUp 1s ease-out;" />
 
 <br><br>
 
 ### 📊 GitHub Analytics
 
-<p align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
-</p>
+<div align="center" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
 
-<p align="center">
+<div style="animation: slideInLeft 1s ease-out;">
+<img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
+</div>
+
+<div style="animation: slideInRight 1s ease-out;">
 <img src="https://github-readme-stats.vercel.app/api/top-langs?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
-</p>
+</div>
+
+</div>
 
 <br><br>
 
 ### 📈 Activity Graph
 
-<p align="center">
+<div style="animation: fadeInUp 1.5s ease-out;">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&bg_color=0d1117&color=fff&line=00b3ff&point=f9ca24&area=true&hide_border=true&custom_title=My%20GitHub%20Activity%20Graph" alt="Activity Graph" />
-</p>
+</div>
 
 <br>
 
