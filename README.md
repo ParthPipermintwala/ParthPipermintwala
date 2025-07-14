@@ -99,21 +99,17 @@
 
 ### 🔥 Streak Stats
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&date_format=M%20j%5B%2C%20Y%5D&cache_seconds=86400" alt="GitHub Streak Stats" style="animation: fadeInUp 1s ease-out;" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=radical&border_radius=10&cache_seconds=86400" alt="GitHub Streak Stats" />
 
 <br><br>
 
 ### 📊 GitHub Analytics
 
-<div align="center" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+<div align="center">
 
-<div style="animation: slideInLeft 1s ease-out;">
-<img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
-</div>
-<br><br>
-<div style="animation: slideInRight 1s ease-out;">
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
-</div>
+<img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
 
 </div>
 
@@ -121,9 +117,7 @@
 
 ### 📈 Activity Graph
 
-<div style="animation: fadeInUp 1.5s ease-out;">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&bg_color=0d1117&color=fff&line=00b3ff&point=f9ca24&area=true&hide_border=true&custom_title=My%20GitHub%20Activity%20Graph" alt="Activity Graph" />
-</div>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&bg_color=0d1117&color=fff&line=00b3ff&point=f9ca24&area=true&hide_border=true&custom_title=My%20GitHub%20Activity%20Graph&cache_seconds=86400" alt="Activity Graph" />
 
 <br>
 
