@@ -108,7 +108,8 @@
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=parthpipermintwala&show_icons=true&theme=radical&border_radius=10&count_private=true&cache_seconds=86400" alt="GitHub Stats" />
-
+<br>
+<br>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=parthpipermintwala&show_icons=true&locale=en&layout=compact&theme=radical&border_radius=10&cache_seconds=86400" alt="Top Languages" />
 
 </div>
