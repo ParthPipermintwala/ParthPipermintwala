@@ -190,7 +190,7 @@
     </td>
     <td align="center">
       <a href="mailto:parthpipermintwala9@gmail.com">
-        <img src="https://moein.video/wp-content/uploads/2022/12/Gmail-Logo-GIF-Gmail-Icon-GIF-Royalty-Free-Animated-Icon-GIF-1080px-after-effects-project.gif" width="100" alt="Email"/>
+        <img src="https://pouch.jumpshare.com/preview/U3F1Anhi57F_c8lkiCCEfI2byi2Z_YlwLrgPFScftYrZrKhuazrquShwxJQXWox12WF5MsSeeF4IzGHrQaaYxfIcsf3jI5CWqJGjDWOoqlI" width="100" alt="Email"/>
       </a>
       <br>
        <a href="mailto:parthpipermintwala9@gmail.com"> <strong>Email</strong></a>
