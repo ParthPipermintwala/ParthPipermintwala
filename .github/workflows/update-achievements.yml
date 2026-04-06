@@ -1,0 +1,46 @@
+name: Update README Achievements
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-achievements:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install --no-save cheerio@^1
+
+      - name: Update achievements section
+        run: node .github/scripts/update-achievements.mjs
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "No README changes to commit"
+            exit 0
+          fi
+
+          git add README.md
+          git commit -m "Update achievements section"
+          git push
