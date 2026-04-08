@@ -145,11 +145,12 @@
 
 ## 🏆 Achievement Showcase
 
-
+<div>
 <img src="./assets/pull-shark.png" width="100" />
 <img src="./assets/quickdraw.png" width="100" />
 <img src="./assets/yolo.png" width="100" />
 <img src="./assets/starstruck.png" width="100" />
+</div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -224,4 +225,4 @@
   <sub>⭐ Star this repository if you found it helpful!</sub>
   
 </div>
-<!-- Profile updated: Mon Jul 14 02:18:38 UTC 2025 -->
+<!-- Profile updated: Wed Apr 08 02:56:48 UTC 2026 -->
