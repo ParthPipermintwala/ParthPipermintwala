@@ -87,7 +87,9 @@ async function main() {
   );
 
   if (updated === readme) {
-    console.warn("Could not find achievements markers in README.md; skipping update.");
+    console.warn(
+      "Could not find achievements markers in README.md; skipping update.",
+    );
     return;
   }
 
