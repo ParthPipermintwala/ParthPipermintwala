@@ -69,9 +69,17 @@ ${cards}
 }
 
 async function main() {
-  const html = await fetchAchievementsPage();
-  const achievements = extractAchievements(html);
   const readme = fs.readFileSync(readmePath, "utf8");
+  let achievements = [];
+
+  try {
+    const html = await fetchAchievementsPage();
+    achievements = extractAchievements(html);
+  } catch (error) {
+    console.warn(`Skipping achievements refresh: ${error.message}`);
+    return;
+  }
+
   const replacement = renderSection(achievements);
   const updated = readme.replace(
     /<!-- achievements:start -->[\s\S]*?<!-- achievements:end -->/m,
@@ -79,7 +87,8 @@ async function main() {
   );
 
   if (updated === readme) {
-    throw new Error("Could not find achievements markers in README.md");
+    console.warn("Could not find achievements markers in README.md; skipping update.");
+    return;
   }
 
   fs.writeFileSync(readmePath, updated);
