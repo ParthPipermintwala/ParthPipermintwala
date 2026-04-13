@@ -7,18 +7,18 @@
 </p>
 
 <h1 align="center" style="margin:0;font-size:clamp(28px,6vw,42px);line-height:1.1;color:#ffffff;">
-  Building secure MERN apps with a clean, modern edge.
+  Building secure full stack apps with a clean, modern edge.
 </h1>
 
 <p align="center" style="max-width:760px;margin:12px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
-  I create polished full stack products with responsive UI, scalable APIs, JWT authentication, Redis for sessions and cache, and completed Next.js work.
+  I build polished full stack applications using the MERN stack and Next.js, with responsive UI, scalable APIs, secure authentication, and efficient caching & session management.
 </p>
 
 <p align="center" style="margin:0 0 10px;line-height:2.1;">
-  <img src="https://img.shields.io/badge/MERN-Complete-111827?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MERN" />
-  <img src="https://img.shields.io/badge/Next.js-Completed-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js Completed" />
-  <img src="https://img.shields.io/badge/JWT-Auth-%23111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Auth" />
-  <img src="https://img.shields.io/badge/Redis-Session_%26_Cache-111827?style=for-the-badge&logo=redis&logoColor=white" alt="Redis Session and Cache" />
+  <img src="https://img.shields.io/badge/MERN-Full%20Stack%20Architecture-111827?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MERN Full Stack Architecture" />
+  <img src="https://img.shields.io/badge/Next.js-SSR%20%26%20Performance%20Optimized-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js SSR and Performance Optimized" />
+  <img src="https://img.shields.io/badge/JWT-Secure%20Authentication-%23111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Secure Authentication" />
+  <img src="https://img.shields.io/badge/Redis-Caching%20%26%20Sessions-111827?style=for-the-badge&logo=redis&logoColor=white" alt="Redis Caching and Sessions" />
 </p>
 
 <p align="center" style="margin:0;color:#94a3b8;font-size:14px;line-height:1.6;">
