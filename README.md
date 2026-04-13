@@ -11,11 +11,12 @@
 </h1>
 
 <p align="center" style="max-width:760px;margin:12px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
-  I create polished full stack products with responsive UI, scalable APIs, JWT authentication, and Redis for sessions and cache.
+  I create polished full stack products with responsive UI, scalable APIs, JWT authentication, Redis for sessions and cache, and completed Next.js work.
 </p>
 
 <p align="center" style="margin:0 0 10px;line-height:2.1;">
   <img src="https://img.shields.io/badge/MERN-Complete-111827?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MERN" />
+  <img src="https://img.shields.io/badge/Next.js-Completed-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js Completed" />
   <img src="https://img.shields.io/badge/JWT-Auth-%23111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Auth" />
   <img src="https://img.shields.io/badge/Redis-Session_%26_Cache-111827?style=for-the-badge&logo=redis&logoColor=white" alt="Redis Session and Cache" />
 </p>
@@ -37,7 +38,7 @@
 ## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
 
 <p align="center" style="max-width:760px;margin:8px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
-  I’m an IT student and self-taught developer building modern web experiences with React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT auth, and session-based auth, while learning DevOps & Cloud with CI/CD, AWS, NGINX, and scalable backend systems.
+  I’m an IT student and self-taught developer building modern web experiences with React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT auth, and session-based auth. I have completed Next.js and am continuing to grow with DevOps & Cloud, CI/CD, AWS, NGINX, and scalable backend systems.
 </p>
 
 <table align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:900px;border-collapse:separate;border-spacing:12px;">
