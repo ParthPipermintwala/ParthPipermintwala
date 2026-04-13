@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import cheerio from "cheerio";
+import * as cheerio from "cheerio";
 
 const username = "ParthPipermintwala";
 const achievementsUrl = `https://github.com/${username}?tab=achievements`;
