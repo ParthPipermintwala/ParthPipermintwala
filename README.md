@@ -145,7 +145,7 @@
 <!-- achievements:start -->
 
 ## 🏆 Achievements
-
+<div>
 
 <img src="./assets/pull-shark.png" width="100" />
 
@@ -154,6 +154,8 @@
 <img src="./assets/yolo.png" width="100" />
 
 <img src="./assets/starstruck.png" width="100" />
+
+</div>
 
 <!-- achievements:end -->
 
