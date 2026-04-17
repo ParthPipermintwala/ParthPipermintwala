@@ -139,7 +139,7 @@
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=parthpipermintwala&theme=transparent&hide_border=true&background=00000000&stroke=1e2939&ring=4EA94B&fire=38bdf8&currStreakLabel=4EA94B&sideLabels=94a3b8&dates=64748b&sideNums=e2e8f0" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=parthpipermintwala&theme=transparent&hide_border=true&background=00000000&stroke=1e2939&ring=4EA94B&fire=38bdf8&currStreakLabel=4EA94B&sideLabels=94a3b8&dates=64748b&sideNums=e2e8f0" alt="GitHub Streak Stats" />
 </a>
 </div>
 
@@ -153,10 +153,10 @@
 
 ## 🏆 Achievements
 <div>
-<img src="./assets/pull-shark.png" width="100" />
-<img src="./assets/quickdraw.png" width="100" />
-<img src="./assets/yolo.png" width="100" />
-<img src="./assets/starstruck.png" width="100" />
+<img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
+<img src="./assets/quickdraw.png" width="100" alt="Quickdraw" />
+<img src="./assets/yolo.png" width="100" alt="YOLO" />
+<img src="./assets/starstruck.png" width="100" alt="Starstruck" />
 </div>
 
 <!-- achievements:end -->

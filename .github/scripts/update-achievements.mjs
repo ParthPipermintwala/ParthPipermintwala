@@ -46,9 +46,9 @@ function extractAchievements(html) {
   return achievements;
 }
 
-function renderAchievementCard({ name, src }) {
+function renderAchievementCard({ name }) {
   return `
-<img src="./assets/${name.toLowerCase().replace(/\s+/g, "-")}.png" width="100" />`;
+<img src="./assets/${name.toLowerCase().replace(/\s+/g, "-")}.png" width="100" alt="${name}" />`;
 }
 
 function renderSection(achievements) {
@@ -58,15 +58,13 @@ function renderSection(achievements) {
         .map((card) => `${card.trim()}`)
         .join("\n")
     : `
-    <div style="display:inline-block;vertical-align:top;width:calc(100% - 12px);min-width:280px;margin:6px;background:linear-gradient(135deg,rgba(11,18,32,0.96) 0%,rgba(17,24,39,0.94) 100%);border:1px solid #243041;border-radius:18px;padding:18px;box-shadow:0 18px 36px rgba(0,0,0,0.18);text-align:center;">
-      <p style="margin:0;color:#cbd5e1;font-size:15px;line-height:1.7;">No achievements were found on the live page right now.</p>
-    </div>`;
+  <p style="margin:0;color:#cbd5e1;font-size:15px;line-height:1.7;text-align:center;">No achievements were found on the live page right now.</p>`;
 
   return `<!-- achievements:start -->
 
 ## 🏆 Achievements
 
-<div>
+<div >
 ${cards}
 </div>
 
