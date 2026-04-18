@@ -153,7 +153,7 @@
 
 ## 🏆 Achievements
 
-<div>
+<div >
 <img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
 <img src="./assets/quickdraw.png" width="100" alt="Quickdraw" />
 <img src="./assets/yolo.png" width="100" alt="YOLO" />
