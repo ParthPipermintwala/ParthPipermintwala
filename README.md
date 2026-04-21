@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30,12,6,25,20,4&height=160&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30,12,6,25,20,4&height=160&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=40&fontColor=fff&animation=twinkling&fontAlignY=35&v=20260421" width="100%" />
 </p>
 
 <p align="center" style="margin:18px 0 8px;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8b949e;">
@@ -26,16 +26,16 @@
 </p>
 
 <p align="center" style="margin:16px 0 0;">
-  <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=0e75b6&style=flat&cache_seconds=86400" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=0e75b6&style=flat&cache_seconds=86400&v=20260421" alt="Profile Views" />
 </p>
 
 <p align="center" style="margin-top:14px;">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421" alt="divider" />
 </p>
 
 
  
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> About Me
+## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif?v=20260421" width="50"> About Me
 
 <p align="center" style="max-width:760px;margin:8px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
   I’m an IT student and self-taught developer building modern web experiences with React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT auth, and session-based auth. I have completed Next.js and am continuing to grow with DevOps & Cloud, CI/CD, AWS, NGINX, and scalable backend systems.
@@ -68,9 +68,9 @@
   <img src="https://img.shields.io/badge/Currently%20Learning-DevOps_%26_Cloud-111827?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="Current Learning" />
 </p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="50"> Technologies & Tools
+## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif&v=20260421" width="50"> Technologies & Tools
 
 <h3 align="center">Current Tech Stack</h3>
 
@@ -118,23 +118,23 @@
 
 <p align="center">Secure, responsive, and production-ready tooling for full stack delivery.</p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
 
-## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif" width="50"> GitHub Stats
+## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif?v=20260421" width="50"> GitHub Stats
 
 
 <h3 align="center">Statistics</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthpipermintwala&theme=aura_dark" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthpipermintwala&theme=2077" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthpipermintwala&theme=2077" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthpipermintwala&theme=2077" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthpipermintwala&theme=aura_dark" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthpipermintwala&theme=aura_dark&v=20260421" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthpipermintwala&theme=aura_dark&v=20260421" height="180em" />
 </a>
 </div>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"><h2 align="left">⚡Activity Graph:</h2>
-<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue"/>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421"><h2 align="left">⚡Activity Graph:</h2>
+<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue&v=20260421"/>
 
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
@@ -147,7 +147,7 @@
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
 
 <!-- achievements:start -->
 
@@ -167,10 +167,10 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake.svg?v=20260421">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake-dark.svg?v=20260421">
   <img alt="GitHub Contribution Grid Snake Animation" 
-       src="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake-dark.svg"
+      src="https://raw.githubusercontent.com/parthpipermintwala/parthpipermintwala/output/github-contribution-grid-snake-dark.svg?v=20260421"
        width="100%"
        style="max-width: 1000px; background-color: #0d1117; border-radius: 9px; padding: 0px;">
 </picture>
@@ -184,17 +184,17 @@
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
 
 
 <div align="center">
 
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="42"> Let's Connect & Build Something Amazing Together!
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif?v=20260421" width="42"> Let's Connect & Build Something Amazing Together!
 
 <p align="center">Open to collaborations, internships, freelance work, and secure full stack projects with polished UI and reliable backend systems.</p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2800&pause=900&color=FF6B6B&center=true&vCenter=true&width=720&lines=Let's+build+something+clean+and+useful;Open+to+collaborations+%26+opportunities;Focused+on+secure+%26+modern+web+apps&cache_seconds=86400" alt="Collaborate Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=18&duration=2800&pause=900&color=FF6B6B&center=true&vCenter=true&width=720&lines=Let's+build+something+clean+and+useful;Open+to+collaborations+%26+opportunities;Focused+on+secure+%26+modern+web+apps&cache_seconds=86400&v=20260421" alt="Collaborate Typing SVG" />
 </p>
 
 <p align="center">
@@ -214,14 +214,14 @@
 </div>
 
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
 
 <div align="center">
   
   ### ✨ Thank you for visiting my profile! ✨
   
   <p align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=25&duration=3000&pause=1000&color=A9FEF7&center=true&vCenter=true&width=600&lines=Thanks+for+stopping+by!+⭐;Let's+connect+and+code+together!+🚀;Happy+Coding!+💻&cache_seconds=86400" alt="Thanks Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Righteous&size=25&duration=3000&pause=1000&color=A9FEF7&center=true&vCenter=true&width=600&lines=Thanks+for+stopping+by!+⭐;Let's+connect+and+code+together!+🚀;Happy+Coding!+💻&cache_seconds=86400&v=20260421" alt="Thanks Typing SVG" />
   </p>
 
   <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60">
