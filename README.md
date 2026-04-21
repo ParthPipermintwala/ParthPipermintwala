@@ -153,7 +153,7 @@
 
 ## 🏆 Achievements
 
-<div>
+<div >
 <img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
 <img src="./assets/quickdraw.png" width="100" alt="Quickdraw" />
 <img src="./assets/yolo.png" width="100" alt="YOLO" />
@@ -231,4 +231,4 @@
   <sub>⭐ Star this repository if you found it helpful!</sub>
   
 </div>
-<!-- Profile updated: Fri Apr 17 03:24:49 UTC 2026 -->
+<!-- Profile updated: Tue Apr 21 03:25:48 UTC 2026 -->
