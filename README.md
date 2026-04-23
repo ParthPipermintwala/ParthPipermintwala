@@ -2,57 +2,48 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30,12,6,25,20,4&height=190&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&v=20260423a" width="100%" />
 </p>
 
-<table align="center" width="100%">
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2800&pause=900&color=9AD9FF&center=true&vCenter=true&width=780&lines=Building+secure+full+stack+apps+with+a+clean%2C+modern+edge;Polished+UI%2C+scalable+APIs%2C+and+production-ready+systems&cache_seconds=86400&v=20260423c" alt="Portfolio typing animation" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PORTFOLIO%20SNAPSHOT-111827?style=for-the-badge&logo=github&logoColor=white" alt="Portfolio Snapshot" />
+</p>
+
+<h1 align="center">Building secure full stack apps with a clean, modern edge.</h1>
+
+<p align="center">
+  I build polished full stack applications using the MERN stack and Next.js, with responsive UI, scalable APIs, secure authentication, and efficient caching and session management.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/MERN-Full%20Stack%20Architecture-111827?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MERN Full Stack Architecture" />
+  <img src="https://img.shields.io/badge/Next.js-SSR%20%26%20Performance%20Optimized-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js SSR and Performance Optimized" />
+  <img src="https://img.shields.io/badge/Auth%20Layer-Secure%20Authentication-111827?style=for-the-badge&logo=shield&logoColor=white" alt="Secure Authentication" />
+  <img src="https://img.shields.io/badge/Redis-Caching%20%26%20Sessions-111827?style=for-the-badge&logo=redis&logoColor=white" alt="Redis Caching and Sessions" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Focus-Secure%20Full%20Stack%20Development-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Focus" />
+  <img src="https://img.shields.io/badge/Currently%20Learning-DevOps%20%26%20Cloud-111827?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="Current Learning" />
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=0e75b6&style=flat&cache_seconds=86400&v=20260423d" alt="Profile Views" />
+</p>
+
+
+<table align="center">
   <tr>
-    <td width="58%" valign="middle">
-      <p align="left">
-        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=19&duration=2800&pause=900&color=9AD9FF&center=false&vCenter=true&width=760&lines=Portfolio+Snapshot;Building+secure+full+stack+apps+with+a+clean%2C+modern+edge;Polished+UI%2C+scalable+APIs%2C+and+production-ready+systems&cache_seconds=86400&v=20260423a" alt="Portfolio typing animation" />
-      </p>
-
-      <h1 align="left">Building secure full stack apps with a clean, modern edge.</h1>
-
-      <p align="left">
-        I build polished full stack applications using the MERN stack and Next.js, with responsive UI, scalable APIs, secure authentication, and efficient caching and session management.
-      </p>
-
-      <p align="left">
-        <img src="https://img.shields.io/badge/MERN-Full%20Stack%20Architecture-111827?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MERN Full Stack Architecture" />
-        <img src="https://img.shields.io/badge/Next.js-SSR%20%26%20Performance%20Optimized-111827?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js SSR and Performance Optimized" />
-        <img src="https://img.shields.io/badge/JWT-Secure%20Authentication-111827?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT Secure Authentication" />
-        <img src="https://img.shields.io/badge/Redis-Caching%20%26%20Sessions-111827?style=for-the-badge&logo=redis&logoColor=white" alt="Redis Caching and Sessions" />
-      </p>
-
-      <p align="left">
-        <img src="https://img.shields.io/badge/Focus-Secure%20Full%20Stack%20Development-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Focus" />
-        <img src="https://img.shields.io/badge/Currently%20Learning-DevOps%20%26%20Cloud-111827?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="Current Learning" />
-      </p>
-
-      <p align="left">
-        <img src="https://komarev.com/ghpvc/?username=parthpipermintwala&label=Profile%20Views&color=0e75b6&style=flat&cache_seconds=86400&v=20260423a" alt="Profile Views" />
-      </p>
-    </td>
-
-    <td width="42%" valign="middle">
-      <p align="center">
-        <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?v=20260423a" alt="Coding animation" width="100%" />
-      </p>
-
-      <table align="center" width="100%">
-        <tr>
-          <td align="center"><strong>Secure</strong><br>JWT and sessions</td>
-          <td align="center"><strong>Fast</strong><br>Next.js and caching</td>
-        </tr>
-        <tr>
-          <td align="center"><strong>Modern</strong><br>Responsive UI systems</td>
-          <td align="center"><strong>Ready</strong><br>Production focused</td>
-        </tr>
-      </table>
-    </td>
+    <td align="center"><strong>Secure</strong><br>JWT and sessions</td>
+    <td align="center"><strong>Fast</strong><br>Next.js and caching</td>
+    <td align="center"><strong>Modern</strong><br>Responsive UI systems</td>
+    <td align="center"><strong>Ready</strong><br>Production focused</td>
   </tr>
 </table>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260423a" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260423b" alt="divider" />
 </p>
 
 
