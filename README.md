@@ -139,15 +139,15 @@
 <h3 align="center">Statistics</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthpipermintwala&theme=aura_dark&v=20260421" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthpipermintwala&theme=2077&v=20260421" height="180em" />
-<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthpipermintwala&theme=aura_dark&v=20260421" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=parthpipermintwala&theme=aura_dark&v=20260425" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=parthpipermintwala&theme=2077&v=20260425" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=parthpipermintwala&theme=2077&v=20260425" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=parthpipermintwala&theme=2077&v=20260425" height="180em" />
+<img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthpipermintwala&theme=aura_dark&v=20260425" height="180em" />
 </a>
 </div>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421"><h2 align="left">⚡Activity Graph:</h2>
-<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue&v=20260421"/>
+<img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue&v=20260425"/>
 
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
