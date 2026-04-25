@@ -152,7 +152,7 @@
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-  <img src="https://streak-stats.demolab.com/?user=parthpipermintwala&theme=transparent&hide_border=true&background=00000000&stroke=1e2939&ring=4EA94B&fire=38bdf8&currStreakLabel=4EA94B&sideLabels=94a3b8&dates=64748b&sideNums=e2e8f0&cache_seconds=0" alt="GitHub Streak Stats" />
+  <img src="./assets/streak.svg" alt="GitHub Streak Stats" />
 </a>
 </div>
 
