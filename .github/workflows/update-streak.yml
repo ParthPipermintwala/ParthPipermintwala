@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: update-streak-main
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -44,4 +48,8 @@ jobs:
 
           git add assets/streak.svg
           git commit -m "Update GitHub streak stats"
-          git push
+
+          git fetch origin main
+          git rebase -X theirs origin/main
+
+          git push origin HEAD:main
