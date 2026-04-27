@@ -10,7 +10,7 @@ on:
 
 concurrency:
   group: update-streak-main
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -24,6 +24,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Node
@@ -41,6 +42,10 @@ jobs:
 
       - name: Commit changes
         run: |
+          set -euo pipefail
+
+          git checkout main
+
           if git diff --quiet assets/streak.svg; then
             echo "No streak changes to commit"
             exit 0
@@ -50,6 +55,6 @@ jobs:
           git commit -m "Update GitHub streak stats"
 
           git fetch origin main
-          git rebase -X theirs origin/main
+          git pull --rebase origin main
 
           git push origin HEAD:main
