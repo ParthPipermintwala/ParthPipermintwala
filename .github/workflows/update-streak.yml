@@ -1,40 +1,47 @@
-name: Update streak badge
+name: Update GitHub Streak
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 1 * * *"
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
 
-concurrency:
-  group: update-streak-badge
-  cancel-in-progress: true
-
 jobs:
   update-streak:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'Update GitHub streak stats')"
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Git
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.x"
+
+      - name: Update streak SVG
+        run: node .github/scripts/update-streak.mjs
+
+      - name: Configure Git
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-      - name: Generate latest streak SVG
-        run: node .github/scripts/update-streak.mjs
-
-      - name: Commit streak SVG
+      - name: Commit changes
         run: |
-          if git diff --quiet -- assets/streak.svg; then
+          if git diff --quiet assets/streak.svg; then
             echo "No streak changes to commit"
             exit 0
           fi
 
           git add assets/streak.svg
-          git commit -m "Update streak badge"
+          git commit -m "Update GitHub streak stats"
           git push
