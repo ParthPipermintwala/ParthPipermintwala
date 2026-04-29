@@ -46,12 +46,12 @@ jobs:
 
           git checkout main
 
-          if git diff --quiet assets/streak.svg; then
+          if git diff --quiet -- assets/streak.svg README.md; then
             echo "No streak changes to commit"
             exit 0
           fi
 
-          git add assets/streak.svg
+          git add assets/streak.svg README.md
           git commit -m "Update GitHub streak stats"
 
           git fetch origin main

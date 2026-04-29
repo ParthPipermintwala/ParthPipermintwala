@@ -4,6 +4,7 @@ import path from "node:path";
 const username = "parthpipermintwala";
 const contributionsUrl = `https://github.com/users/${username}/contributions`;
 const assetPath = path.resolve("assets/streak.svg");
+const readmePath = path.resolve("README.md");
 
 function parseDate(dateText) {
   return new Date(`${dateText}T00:00:00Z`);
@@ -48,10 +49,16 @@ function addDays(date, days) {
 }
 
 async function fetchContributionsPage() {
-  const response = await fetch(contributionsUrl, {
+  const url = new URL(contributionsUrl);
+  url.searchParams.set("_", Date.now().toString());
+
+  const response = await fetch(url, {
+    cache: "no-store",
     headers: {
       "user-agent": "Mozilla/5.0 (compatible; GitHub Actions)",
       accept: "text/html,application/xhtml+xml",
+      "cache-control": "no-cache",
+      pragma: "no-cache",
     },
   });
 
@@ -112,9 +119,10 @@ function computeRuns(contributionMap) {
 
   const latestDate = dates[dates.length - 1];
   let totalContributions = 0;
-  let currentRun = null;
   let longestRun = null;
   let activeRun = null;
+  
+  const allRuns = [];
 
   for (
     let cursor = parseDate(firstContribution);
@@ -127,33 +135,44 @@ function computeRuns(contributionMap) {
 
     if (count > 0) {
       if (!activeRun) {
-        activeRun = {
-          start: dateKey,
-          end: dateKey,
-          length: 1,
-        };
+        activeRun = { start: dateKey, end: dateKey, length: 1 };
       } else {
         activeRun.end = dateKey;
         activeRun.length += 1;
       }
-      continue;
-    }
-
-    if (activeRun) {
-      if (!longestRun || activeRun.length > longestRun.length) {
-        longestRun = { ...activeRun };
+    } else {
+      if (activeRun) {
+        allRuns.push({ ...activeRun });
+        if (!longestRun || activeRun.length > longestRun.length) {
+          longestRun = { ...activeRun };
+        }
+        activeRun = null;
       }
-
-      currentRun = { ...activeRun };
-      activeRun = null;
     }
   }
 
   if (activeRun) {
+    allRuns.push({ ...activeRun });
     if (!longestRun || activeRun.length > longestRun.length) {
       longestRun = { ...activeRun };
     }
-    currentRun = { ...activeRun };
+  }
+
+  let currentRun = null;
+  const latestRun = allRuns.length > 0 ? allRuns[allRuns.length - 1] : null;
+
+  if (latestRun) {
+    const runEnd = parseDate(latestRun.end);
+    const yesterday = parseDate(latestDate);
+    yesterday.setUTCDate(yesterday.getUTCDate() - 1);
+    
+    // Streak is active if the latest run ends on 'latestDate' OR 'yesterday'
+    if (runEnd >= yesterday) {
+      currentRun = latestRun;
+    } else {
+      // Streak broken, represent 0 day streak for today
+      currentRun = { start: latestDate, end: latestDate, length: 0 };
+    }
   }
 
   return {
@@ -251,6 +270,14 @@ function renderSvg(stats) {
 `;
 }
 
+function buildCacheBuster(stats) {
+  const runId = process.env.GITHUB_RUN_ID ?? Date.now().toString();
+  const currentLength = stats.currentRun?.length ?? 0;
+  const longestLength = stats.longestRun?.length ?? 0;
+
+  return `${runId}-${stats.totalContributions}-${currentLength}-${longestLength}`;
+}
+
 async function main() {
   const html = await fetchContributionsPage();
   const contributionMap = extractContributionMap(html);
@@ -262,6 +289,18 @@ async function main() {
 
   const svg = renderSvg(runs);
   fs.writeFileSync(assetPath, svg);
+
+  const readme = fs.readFileSync(readmePath, "utf8");
+  const cacheBuster = buildCacheBuster(runs);
+  const updatedReadme = readme.replace(
+    /<img src="\.\/assets\/streak\.svg(?:\?v=[^"]*)?" alt="GitHub Streak Stats" \/>/,
+    `<img src="./assets/streak.svg?v=${cacheBuster}" alt="GitHub Streak Stats" />`,
+  );
+
+  if (updatedReadme !== readme) {
+    fs.writeFileSync(readmePath, updatedReadme);
+  }
+
   console.log(`Updated ${assetPath} from GitHub contributions data.`);
 }
 
