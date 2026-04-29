@@ -121,7 +121,7 @@ function computeRuns(contributionMap) {
   let totalContributions = 0;
   let longestRun = null;
   let activeRun = null;
-  
+
   const allRuns = [];
 
   for (
@@ -165,7 +165,7 @@ function computeRuns(contributionMap) {
     const runEnd = parseDate(latestRun.end);
     const yesterday = parseDate(latestDate);
     yesterday.setUTCDate(yesterday.getUTCDate() - 1);
-    
+
     // Streak is active if the latest run ends on 'latestDate' OR 'yesterday'
     if (runEnd >= yesterday) {
       currentRun = latestRun;
