@@ -43,12 +43,12 @@
 </table>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260423b" alt="divider" />
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
 </p>
 
 
  
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif?v=20260421" width="50"> About Me
+## 👨‍💻 About Me
 
 <p align="center" style="max-width:760px;margin:8px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
   I’m an IT student and self-taught developer building modern web experiences with React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT auth, and session-based auth. I have completed Next.js and am continuing to grow with DevOps & Cloud, CI/CD, AWS, NGINX, and scalable backend systems.
@@ -81,9 +81,11 @@
   <img src="https://img.shields.io/badge/Currently%20Learning-DevOps_%26_Cloud-111827?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="Current Learning" />
 </p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+</p>
 
-## <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif&v=20260421" width="50"> Technologies & Tools
+## 🛠️ Technologies & Tools
 
 <h3 align="center">Current Tech Stack</h3>
 
@@ -131,9 +133,11 @@
 
 <p align="center">Secure, responsive, and production-ready tooling for full stack delivery.</p>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+</p>
 
-## <img src="https://media.giphy.com/media/W5eoZHPpUx9sapR0eu/giphy.gif?v=20260421" width="50"> GitHub Stats
+## 📊 GitHub Stats
 
 
 <h3 align="center">Statistics</h3>
@@ -146,7 +150,10 @@
 <img align="center" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=parthpipermintwala&theme=aura_dark&v=20260425" height="180em" />
 </a>
 </div>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421"><h2 align="left">⚡Activity Graph:</h2>
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+</p>
+<h2 align="left">⚡Activity Graph:</h2>
 <img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue&v=20260425"/>
 
 <h3 align="center">GitHub Streak</h3>
@@ -160,7 +167,9 @@
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+</p>
 
 <!-- achievements:start -->
 
@@ -197,12 +206,14 @@
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif?v=20260421">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+</p>
 
 
 <div align="center">
 
-## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif?v=20260421" width="42"> Let's Connect & Build Something Amazing Together!
+## 🤝 Let's Connect & Build Something Amazing Together!
 
 <p align="center">Open to collaborations, internships, freelance work, and secure full stack projects with polished UI and reliable backend systems.</p>
 
