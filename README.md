@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2,5,30,12,6,25,20,4&height=190&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35&v=20260423a" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=190&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&v=20260423a" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2800&pause=900&color=9AD9FF&center=true&vCenter=true&width=780&lines=Crafting+modern+full+stack+experiences+with+motion+and+precision;Turning+ideas+into+fast%2C+secure%2C+and+polished+web+products&cache_seconds=86400&v=20260423e" alt="Portfolio typing animation" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=00D9FF&center=true&vCenter=true&width=780&lines=Crafting+modern+full+stack+experiences+with+motion+and+precision;Turning+ideas+into+fast%2C+secure%2C+and+polished+web+products" alt="Portfolio typing animation" />
 </p>
 
 <p align="center">
