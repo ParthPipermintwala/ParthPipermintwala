@@ -147,10 +147,6 @@
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,redux,nextjs,tailwind,nodejs,express,mongodb,mysql,redis,nginx,aws,git,github,vscode,postman,php,python,cpp&perline=9&theme=dark" alt="Beautiful Tech Stack Grid" />
-</p>
-
-<p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
