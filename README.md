@@ -147,10 +147,6 @@
 </p>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=react,redux,nextjs,tailwind,nodejs,express,mongodb,mysql,redis,nginx,aws,git,github,vscode,postman,php,python,cpp&perline=9&theme=dark" alt="Beautiful Tech Stack Grid" />
-</p>
-
-<p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
@@ -176,7 +172,7 @@
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-  <img src="./assets/streak.svg?v=25147598641-305-2-8" alt="GitHub Streak Stats" />
+  <img src="./assets/streak.svg?v=25176247561-305-2-8" alt="GitHub Streak Stats" />
 </a>
 </div>
 
@@ -271,4 +267,4 @@
   <sub>⭐ Star this repository if you found it helpful!</sub>
   
 </div>
-<!-- Profile updated: Thu Apr 30 03:44:47 UTC 2026 -->
+<!-- Profile updated: Thu Apr 30 16:11:17 UTC 2026 -->
