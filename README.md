@@ -1,6 +1,6 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=timeGradient&height=190&section=header&text=Hi,%20I'm%20Parth%20Pipermintwala👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35&v=20260423a" width="100%" />
-</p>
+<div align="center">
+  <img src="./assets/header.svg" width="100%" alt="Parth Pipermintwala Animated Header" />
+</div>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&duration=2500&pause=1000&color=00D9FF&center=true&vCenter=true&width=780&lines=Crafting+modern+full+stack+experiences+with+motion+and+precision;Turning+ideas+into+fast%2C+secure%2C+and+polished+web+products" alt="Portfolio typing animation" />
@@ -43,16 +43,25 @@
 </table>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
 
  
-## 👨‍💻 About Me
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium-Light%20Skin%20Tone.png" width="25" height="25" alt="Man Technologist"/> About Me
 
-<p align="center" style="max-width:760px;margin:8px auto 18px;color:#cbd5e1;font-size:16px;line-height:1.7;">
-  I’m an IT student and self-taught developer building modern web experiences with React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT auth, and session-based auth. I have completed Next.js and am continuing to grow with DevOps & Cloud, CI/CD, AWS, NGINX, and scalable backend systems.
-</p>
+<table align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:900px;border:none;">
+  <tr>
+    <td width="65%" valign="center">
+      <p align="left" style="color:#cbd5e1;font-size:16px;line-height:1.7;">
+        I’m an IT student and self-taught developer building modern web experiences with <strong>React, Next.js, Node.js, Express.js, MongoDB, MySQL, Redis, JWT</strong>, and session-based auth. I have completed Next.js and am continuing to grow with <strong>DevOps & Cloud, CI/CD, AWS, NGINX</strong>, and scalable backend systems.
+      </p>
+    </td>
+    <td width="35%" align="center" valign="center">
+      <img src="https://raw.githubusercontent.com/7oSkaaa/7oSkaaa/main/Images/about_me.gif" width="220" alt="Animated Developer" />
+    </td>
+  </tr>
+</table>
 
 <table align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:900px;border-collapse:separate;border-spacing:12px;">
   <tr>
@@ -75,17 +84,17 @@
   </tr>
 </table>
 
-<p align="center" style="margin:16px 0 0;line-height:2;">
+<p align="center">
   <img src="https://img.shields.io/badge/Location-India-111827?style=for-the-badge&logo=googlemaps&logoColor=white" alt="India" />
   <img src="https://img.shields.io/badge/Focus-Secure_Full_Stack_Development-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Focus" />
   <img src="https://img.shields.io/badge/Currently%20Learning-DevOps_%26_Cloud-111827?style=for-the-badge&logo=amazon-aws&logoColor=FF9900" alt="Current Learning" />
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
-## 🛠️ Technologies & Tools
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="25" height="25" alt="Laptop"/> Technologies & Tools
 
 <h3 align="center">Current Tech Stack</h3>
 
@@ -134,10 +143,18 @@
 <p align="center">Secure, responsive, and production-ready tooling for full stack delivery.</p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://skillicons.dev/icons?i=react,redux,nextjs,tailwind,nodejs,express,mongodb,mysql,redis,nginx,aws,git,github,vscode,postman,php,python,cpp&perline=9&theme=dark" alt="Beautiful Tech Stack Grid" />
 </p>
 
-## 📊 GitHub Stats
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,redux,nextjs,tailwind,nodejs,express,mongodb,mysql,redis,nginx,aws,git,github,vscode,postman,php,python,cpp&perline=9&theme=dark" alt="Beautiful Tech Stack Grid" />
+</p>
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
+</p>
+
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25" height="25" alt="Bar Chart"/> GitHub Stats
 
 
 <h3 align="center">Statistics</h3>
@@ -151,7 +168,7 @@
 </a>
 </div>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 <h2 align="left">⚡Activity Graph:</h2>
 <img align="center" src="https://github-readme-activity-graph.vercel.app/graph?username=parthpipermintwala&theme=vue&v=20260425"/>
@@ -168,12 +185,12 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
 <!-- achievements:start -->
 
-## 🏆 Achievements
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="25" height="25" alt="Rocket"/> Achievements
 
 <div >
 <img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
@@ -184,7 +201,7 @@
 
 <!-- achievements:end -->
 
-## 🐍 GitHub Contribution Snake
+## <img src="https://em-content.zobj.net/source/microsoft-teams/363/snake_1f40d.png" width="25" height="25" alt="Snake"/> GitHub Contribution Snake
 
 <div align="center">
 
@@ -207,13 +224,13 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" alt="divider" />
+  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
 
 <div align="center">
 
-## 🤝 Let's Connect & Build Something Amazing Together!
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="25" height="25" alt="Handshake"/> Let's Connect & Build Something Amazing Together!
 
 <p align="center">Open to collaborations, internships, freelance work, and secure full stack projects with polished UI and reliable backend systems.</p>
 

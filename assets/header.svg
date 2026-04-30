@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 300" width="100%" height="auto">
+  <defs>
+    <!-- Background Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+
+    <!-- Glowing Effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;family=Inter:wght@700;900&amp;display=swap');
+      
+      .mono { font-family: 'Fira Code', monospace; }
+      .sans { font-family: 'Inter', sans-serif; }
+      
+      /* Terminal Animations */
+      @keyframes blink { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
+      .cursor { animation: blink 1s step-end infinite; }
+      
+      @keyframes fadeIn { 0% { opacity: 0; transform: translateY(5px); } 100% { opacity: 1; transform: translateY(0); } }
+      @keyframes fillBar { 0% { width: 0px; } 100% { width: 276px; } }
+      
+      .log-1 { animation: fadeIn 0.2s ease-out both 0.2s; }
+      .log-2 { animation: fadeIn 0.2s ease-out both 0.8s; }
+      .log-3 { animation: fadeIn 0.2s ease-out both 1.4s; }
+      .log-4 { animation: fadeIn 0.2s ease-out both 2.0s; }
+      .log-5 { animation: fadeIn 0.2s ease-out both 2.6s; }
+      .log-6 { animation: fadeIn 0.2s ease-out both 3.2s; }
+      
+      .progress-bar { animation: fillBar 3s cubic-bezier(0.4, 0, 0.2, 1) both; }
+      
+      /* Smooth Orbital Animations */
+      @keyframes orbit { 
+        0% { transform: rotate(0deg); } 
+        100% { transform: rotate(360deg); } 
+      }
+      @keyframes counterOrbit { 
+        0% { transform: rotate(0deg); } 
+        100% { transform: rotate(-360deg); } 
+      }
+      
+      .orbit-group { 
+        animation: orbit 20s linear infinite; 
+        transform-origin: 0 0; 
+      }
+      .orbit-node { 
+        animation: counterOrbit 20s linear infinite; 
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Tech Background -->
+  <rect width="100%" height="100%" fill="#030712"/>
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.6"/>
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="150" cy="150" r="120" fill="#0ea5e9" opacity="0.06" filter="url(#glow)"/>
+  <circle cx="700" cy="150" r="180" fill="#8b5cf6" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="1250" cy="150" r="140" fill="#10b981" opacity="0.06" filter="url(#glow)"/>
+
+  <!-- ========================================== -->
+  <!-- LEFT PANEL: DEPLOYMENT TERMINAL            -->
+  <!-- ========================================== -->
+  <g transform="translate(40, 25)">
+    <rect width="320" height="250" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Window Header -->
+    <rect width="320" height="32" rx="8" fill="#1e293b"/>
+    <rect y="24" width="320" height="8" fill="#1e293b"/> <!-- Bottom square edge -->
+    <circle cx="20" cy="16" r="6" fill="#ef4444"/>
+    <circle cx="42" cy="16" r="6" fill="#eab308"/>
+    <circle cx="64" cy="16" r="6" fill="#22c55e"/>
+    <text x="86" y="21" class="mono" font-size="12" fill="#94a3b8">parth_system.exe (~)</text>
+
+    <!-- Terminal Content (Animated) -->
+    <svg x="15" y="45" width="290" height="150" viewBox="0 0 290 150">
+      <g class="mono" font-size="13">
+        <text y="15" class="log-1" fill="#94a3b8">[sys_init] -> Load core.modules.fullstack</text>
+        <text y="40" class="log-2" fill="#22c55e">[OK] <tspan fill="#e2e8f0">-> Activate: MERN + Next.js + OAUTH</tspan></text>
+        <text y="65" class="log-3" fill="#22c55e">[OK] <tspan fill="#e2e8f0">-> UI Layer: Tailwind + Motion + GSAP </tspan></text>
+        <text y="90" class="log-4" fill="#38bdf8">[INFO] <tspan fill="#e2e8f0">-> State/Cache: Redux + Redis (ACTIVE)</tspan></text>
+        <text y="115" class="log-5" fill="#22c55e">[OK] <tspan fill="#e2e8f0">-> DB connection: MongoDB (OPTIMAL)</tspan></text>
+        <text y="140" class="log-6" fill="#22d3ee">[STATUS] -> ONLINE<tspan fill="#f8fafc" class="cursor">_</tspan></text>
+      </g>
+    </svg>
+
+    <!-- Progress Bar (Animated) -->
+    <rect x="15" y="210" width="290" height="22" rx="4" fill="#030712" stroke="#1e293b"/>
+    <rect x="17" y="212" height="18" rx="3" fill="#22d3ee" opacity="0.85" class="progress-bar"/>
+    <text x="25" y="225" class="mono log-6" font-size="11" fill="#030712" font-weight="600">SYSTEM DEPLOYING... [95% COMPLETED]</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- CENTER PANEL: NAME & TITLE                 -->
+  <!-- ========================================== -->
+  <g transform="translate(720, 140)">
+    <text text-anchor="middle" class="sans" font-size="48" font-weight="900" fill="#ffffff" letter-spacing="2" filter="url(#glow)">
+      <tspan fill="#38bdf8">PARTH</tspan> PIPERMINTWALA
+    </text>
+    <text y="40" text-anchor="middle" class="mono" font-size="20" fill="#94a3b8" letter-spacing="5">FULL STACK DEVELOPER</text>
+    
+    <!-- Animated divider -->
+    <rect x="-200" y="65" width="400" height="1" fill="#1e293b"/>
+    <rect x="-100" y="64" width="200" height="3" fill="#22d3ee" filter="url(#glow)">
+      <animate attributeName="x" values="-200; 0; -200" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- RIGHT PANEL: ORBITING TECH STACK           -->
+  <!-- ========================================== -->
+  <g transform="translate(1200, 150)">
+    
+    <!-- Outer Orbit Ring -->
+    <circle cx="0" cy="0" r="100" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
+    
+    <!-- Orbiting Group (Spins Forward) -->
+    <g class="orbit-group">
+      
+      <!-- Connective Spokelines -->
+      <line x1="0" y1="0" x2="0" y2="-100" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="86.6" y2="-50" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="86.6" y2="50" stroke="#61dafb" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="0" y2="100" stroke="#10b981" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="-86.6" y2="50" stroke="#764abc" stroke-width="1.5" opacity="0.4"/>
+      <line x1="0" y1="0" x2="-86.6" y2="-50" stroke="#ef4444" stroke-width="1.5" opacity="0.4"/>
+
+      <!-- Next.js Node -->
+      <g transform="translate(0, -100)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
+          <text y="4" text-anchor="middle" class="sans" font-size="11" fill="#ffffff">NEXT</text>
+        </g>
+      </g>
+      
+      <!-- Tailwind Node (Replaced AWS) -->
+      <g transform="translate(86.6, -50)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
+          <text y="3" text-anchor="middle" class="sans" font-size="8.5" fill="#06b6d4" font-weight="900">TAILWIND</text>
+        </g>
+      </g>
+      
+      <!-- React Node (Replaced TS) -->
+      <g transform="translate(86.6, 50)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#61dafb" stroke-width="2"/>
+          <text y="4" text-anchor="middle" class="sans" font-size="10" fill="#61dafb" font-weight="900">REACT</text>
+        </g>
+      </g>
+      
+      <!-- MongoDB Node -->
+      <g transform="translate(0, 100)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+          <text y="4" text-anchor="middle" class="sans" font-size="11" fill="#10b981">MDB</text>
+        </g>
+      </g>
+      
+      <!-- Redux Node (Replaced SQL) -->
+      <g transform="translate(-86.6, 50)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#764abc" stroke-width="2"/>
+          <text y="4" text-anchor="middle" class="sans" font-size="10" fill="#764abc" font-weight="900">REDUX</text>
+        </g>
+      </g>
+      
+      <!-- Redis Node -->
+      <g transform="translate(-86.6, -50)">
+        <g class="orbit-node">
+          <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
+          <text y="4" text-anchor="middle" class="sans" font-size="10" fill="#ef4444" font-weight="900">REDIS</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Center Core: Node.js -->
+    <circle cx="0" cy="0" r="42" fill="#030712" stroke="#22c55e" stroke-width="2" filter="url(#glow)"/>
+    <text y="-4" text-anchor="middle" class="sans" font-size="14" font-weight="900" fill="#22c55e">NODE.JS</text>
+    <text y="12" text-anchor="middle" class="mono" font-size="9" fill="#94a3b8">v21.x ACTIVE</text>
+    
+  </g>
+</svg>
