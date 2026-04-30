@@ -47,8 +47,7 @@
 </p>
 
 
- 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium-Light%20Skin%20Tone.png" width="25" height="25" alt="Man Technologist"/> About Me
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Man%20Technologist%20Medium-Light%20Skin%20Tone.png" width="25"/> About Me
 
 <table align="center" cellpadding="0" cellspacing="0" style="width:100%;max-width:900px;border:none;">
   <tr>
@@ -94,7 +93,7 @@
   <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" alt="divider" />
 </p>
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="25" height="25" alt="Laptop"/> Technologies & Tools
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="25"/> Technologies & Tools
 
 <h3 align="center">Current Tech Stack</h3>
 
@@ -151,8 +150,7 @@
 </p>
 
 
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25" height="25" alt="Bar Chart"/>
-  GitHub Stats
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="20"/> GitHub Stats
 
 
 
@@ -189,7 +187,7 @@
 
 <!-- achievements:start -->
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="25" height="25" alt="Rocket"/>Achievements
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="25"/> Achievements
 
 <div >
 <img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
@@ -200,7 +198,7 @@
 
 <!-- achievements:end -->
 
-<img src="https://em-content.zobj.net/source/microsoft-teams/363/snake_1f40d.png" width="25" height="25" alt="Snake"/> GitHub Contribution Snake
+## <img src="https://em-content.zobj.net/source/microsoft-teams/363/snake_1f40d.png" width="25"/> GitHub Contribution Snake
 
 <div align="center">
 
@@ -228,8 +226,7 @@
 
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="25" height="25" alt="Handshake"/>Let's Connect & Build Something Amazing Together!
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" width="25"/> Let’s Connect & Build Something Amazing Together!
 
 <p align="center">Open to collaborations, internships, freelance work, and secure full stack projects with polished UI and reliable backend systems.</p>
 
