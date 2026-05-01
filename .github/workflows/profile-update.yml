@@ -2,8 +2,7 @@ name: Profile README Generator
 
 on:
   schedule:
-    # Run every day at 00:00 UTC
-    - cron: "0 0 * * *"
+    - cron: "30 18 * * *"
   
   workflow_dispatch:
 
