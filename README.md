@@ -187,7 +187,7 @@
 
 <!-- achievements:start -->
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Rocket.png" width="25"/> Achievements
+## 🏆 Achievements
 
 <div >
 <img src="./assets/pull-shark.png" width="100" alt="Pull Shark" />
