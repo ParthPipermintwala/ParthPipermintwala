@@ -2,7 +2,7 @@ name: Update README Achievements
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "30 18 * * *"  # Runs at 12:00 AM IST
   workflow_dispatch:
 
 permissions:

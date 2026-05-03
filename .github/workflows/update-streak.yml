@@ -2,7 +2,7 @@ name: Update GitHub Streak
 
 on:
   schedule:
-    - cron: "0 1 * * *"
+    - cron: "30 18 * * *"  # Runs at 12:00 AM IST
   workflow_dispatch:
   push:
     branches:
