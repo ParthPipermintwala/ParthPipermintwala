@@ -1,11 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 300" width="100%" height="auto">
   <defs>
-    <!-- Background Grid -->
+    <!-- Definitions block:
+         - Gradients, patterns, and filters are declared here
+         - Also includes embedded CSS and animation keyframes used by elements
+         Edit these with care — IDs are referenced throughout the SVG.
+    -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.5"/>
     </pattern>
 
-    <!-- Glowing Effects -->
     <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
       <feMerge>
@@ -14,72 +17,251 @@
       </feMerge>
     </filter>
 
-    <style>
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="55%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#86efac"/>
+    </linearGradient>
+
+    <linearGradient id="dividerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="bgSweep" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071026" stop-opacity="0.98"/>
+      <stop offset="35%" stop-color="#08142a" stop-opacity="0.98"/>
+      <stop offset="65%" stop-color="#041028" stop-opacity="0.98"/>
+      <stop offset="100%" stop-color="#00030a" stop-opacity="1"/>
+    </linearGradient>
+
+    <linearGradient id="accentSweep" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#22d3ee" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Mesh pattern: subtle grid/dot mesh overlay (adjust opacity to show/hide) -->
+    <pattern id="mesh" width="120" height="120" patternUnits="userSpaceOnUse">
+      <path d="M0 0H120V120" fill="none" stroke="#1f2937" stroke-opacity="0.14" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="1.3" fill="#22d3ee" opacity="0.16"/>
+      <circle cx="120" cy="120" r="1.3" fill="#22c55e" opacity="0.12"/>
+    </pattern>
+
+    <!-- Soft blur filter: used to render large ambient color blobs as soft glows -->
+    <filter id="softBlur" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#6ee7f7" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#0b1226" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00030a" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="vignette" cx="50%" cy="50%" r="80%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.7"/>
+    </radialGradient>
+
+    <filter id="starBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="0.6"/>
+    </filter>
+    
+    <linearGradient id="sideFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#030409" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#071026" stop-opacity="0.0"/>
+    </linearGradient>
+
+        <!-- Embedded styles and keyframe animations used by the SVG elements below.
+          Note: importing webfonts here can impact rendering/loading; consider loading fonts separately in the page.
+        -->
+        <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&amp;family=Inter:wght@700;900&amp;display=swap');
-      
+
       .mono { font-family: 'Fira Code', monospace; }
       .sans { font-family: 'Inter', sans-serif; }
-      
-      /* Terminal Animations */
+
       @keyframes blink { 0%, 100% { opacity: 0; } 50% { opacity: 1; } }
       .cursor { animation: blink 1s step-end infinite; }
-      
+
       @keyframes fadeIn { 0% { opacity: 0; transform: translateY(5px); } 100% { opacity: 1; transform: translateY(0); } }
       @keyframes fillBar { 0% { width: 0px; } 100% { width: 276px; } }
-      
+      @keyframes pulseCore { 0%, 100% { transform: scale(1); opacity: 0.9; } 50% { transform: scale(1.08); opacity: 1; } }
+      @keyframes floatGentle { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+      @keyframes dashShift { to { stroke-dashoffset: -120; } }
+      @keyframes shimmer { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+      @keyframes chipGlow { 0%, 100% { opacity: 0.14; } 50% { opacity: 0.3; } }
+
       .log-1 { animation: fadeIn 0.2s ease-out both 0.2s; }
       .log-2 { animation: fadeIn 0.2s ease-out both 0.8s; }
       .log-3 { animation: fadeIn 0.2s ease-out both 1.4s; }
       .log-4 { animation: fadeIn 0.2s ease-out both 2.0s; }
       .log-5 { animation: fadeIn 0.2s ease-out both 2.6s; }
       .log-6 { animation: fadeIn 0.2s ease-out both 3.2s; }
-      
+
       .progress-bar { animation: fillBar 3s cubic-bezier(0.4, 0, 0.2, 1) both; }
-      
-      /* Smooth Orbital Animations */
-      @keyframes orbit { 
-        0% { transform: rotate(0deg); } 
-        100% { transform: rotate(360deg); } 
-      }
-      @keyframes counterOrbit { 
-        0% { transform: rotate(0deg); } 
-        100% { transform: rotate(-360deg); } 
-      }
-      
-      .orbit-group { 
-        animation: orbit 20s linear infinite; 
-        transform-origin: 0 0; 
-      }
-      .orbit-node { 
-        animation: counterOrbit 20s linear infinite; 
-      }
+      .title-block { animation: fadeIn 0.8s ease-out both 0.2s; }
+      .title-main { transform-box: fill-box; }
+      .title-sub { animation: fadeIn 0.8s ease-out both 0.6s; }
+      .divider-sweep { animation: shimmer 2.8s ease-in-out infinite; }
+      .bg-chip-slot { opacity: 0.95; }
+      .bg-chip { animation: chipGlow 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; filter: url(#glow); }
+      .bg-chip-1 { animation: chipGlow 5s ease-in-out infinite; }
+      .bg-chip-2 { animation: chipGlow 5.4s ease-in-out infinite; }
+      .bg-chip-3 { animation: chipGlow 5.8s ease-in-out infinite; }
+      .bg-chip-4 { animation: chipGlow 5.2s ease-in-out infinite; }
+      .bg-chip-5 { animation: chipGlow 5.6s ease-in-out infinite; }
+      .bg-chip-6 { animation: chipGlow 5.1s ease-in-out infinite; }
+      .bg-chip-7 { animation: chipGlow 5.7s ease-in-out infinite; }
+      .bg-chip-8 { animation: chipGlow 5.3s ease-in-out infinite; }
+      .bg-chip-9 { animation: chipGlow 5.9s ease-in-out infinite; }
+      .bg-chip-10 { animation: chipGlow 5.15s ease-in-out infinite; }
+
+      @keyframes orbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+      @keyframes counterOrbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+
+      .orbit-group { animation: orbit 20s linear infinite; transform-origin: 0 0; }
+      .orbit-node { animation: counterOrbit 20s linear infinite; }
     </style>
   </defs>
 
-  <!-- Deep Tech Background -->
-  <rect width="100%" height="100%" fill="#030712"/>
-  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.6"/>
+  <!-- solid black background -->
+  <rect width="100%" height="100%" fill="#000000"/>
+  <!-- left-side solid black (kept to ensure consistent edge) -->
+  <rect x="0" y="0" width="260" height="100%" fill="#000000"/>
+  <rect width="100%" height="100%" fill="url(#mesh)" opacity="0"/>
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0"/>
 
-  <!-- Ambient Light Orbs -->
-  <circle cx="150" cy="150" r="120" fill="#0ea5e9" opacity="0.06" filter="url(#glow)"/>
-  <circle cx="700" cy="150" r="180" fill="#8b5cf6" opacity="0.05" filter="url(#glow)"/>
-  <circle cx="1250" cy="150" r="140" fill="#10b981" opacity="0.06" filter="url(#glow)"/>
+  <!-- subtle stars (hidden for pure black background) -->
+  <g filter="url(#starBlur)" opacity="0" transform="translate(0,0)">
+    <circle cx="88" cy="28" r="0.8" fill="#ffffff" opacity="0.9"/>
+    <circle cx="210" cy="52" r="0.6" fill="#ffffff" opacity="0.7"/>
+    <circle cx="340" cy="20" r="0.5" fill="#ffffff" opacity="0.6"/>
+    <circle cx="520" cy="40" r="0.7" fill="#ffffff" opacity="0.65"/>
+    <circle cx="760" cy="18" r="0.9" fill="#dbeafe" opacity="0.72"/>
+    <circle cx="980" cy="34" r="0.6" fill="#e6fffa" opacity="0.6"/>
+    <circle cx="1180" cy="12" r="0.5" fill="#fff7ed" opacity="0.5"/>
+    <circle cx="1280" cy="48" r="0.7" fill="#e0f2fe" opacity="0.55"/>
+    <circle cx="1360" cy="26" r="0.6" fill="#f8fafc" opacity="0.6"/>
+  </g>
 
-  <!-- ========================================== -->
-  <!-- LEFT PANEL: DEPLOYMENT TERMINAL            -->
-  <!-- ========================================== -->
-  <g transform="translate(40, 25)">
+  <!-- removed vignette for true-black background -->
+  <g filter="url(#softBlur)" opacity="0">
+    <rect x="-160" y="-70" width="560" height="210" rx="110" fill="#0ea5e9" opacity="0.20" transform="rotate(-12 120 34)"/>
+    <rect x="450" y="-90" width="620" height="220" rx="120" fill="#22d3ee" opacity="0.14" transform="rotate(8 760 20)"/>
+    <rect x="930" y="18" width="520" height="200" rx="100" fill="#22c55e" opacity="0.11" transform="rotate(-10 1180 120)"/>
+    <rect x="170" y="190" width="520" height="150" rx="75" fill="#8b5cf6" opacity="0.10" transform="rotate(6 430 264)"/>
+  </g>
+  <!-- removed accent sweep for true-black background -->
+  <path d="M0 52 C240 30, 440 66, 700 48 S1140 20, 1400 62" fill="none" stroke="#000000" stroke-width="1.1" opacity="0" stroke-dasharray="9 14"/>
+  <path d="M0 246 C220 224, 460 282, 700 252 S1160 222, 1400 246" fill="none" stroke="#000000" stroke-width="1.1" opacity="0" stroke-dasharray="5 13"/>
+
+  <!-- Animated background chips and icon blobs: a collection of small animated SVG icons that float in the backdrop. -->
+  <g class="mono" font-size="11" font-weight="700" letter-spacing="0.8" opacity="1">
+    <g class="bg-chip-slot" transform="translate(640, 60)">
+      <g class="bg-chip bg-chip-1">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="18s" repeatCount="indefinite" values="0 0; 140 -90; -120 140; 100 200; -140 60; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.34 1.56 0.64 0.34; 0.26 0 0.74 0.24; 0.16 1 0.84 0; 0.25 0.46 0.45 0.94; 0.62 0 1 0.38"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#ffffff" d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(520, 34)">
+      <g class="bg-chip bg-chip-2">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="19s" repeatCount="indefinite" values="0 0; -130 110; 150 160; -80 80; 110 -50; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.17 0.67 0.83 0.67; 0.32 1 0.68 0; 0.1 0.5 0.9 0.5; 0.45 0.14 0.55 0.86; 0.68 0 1 0.32"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#61dafb" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(760, 44)">
+      <g class="bg-chip bg-chip-3">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="17s" repeatCount="indefinite" values="0 0; 160 -70; -140 170; 120 210; -130 90; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.22 1.26 0.78 0.26; 0.15 0 0.85 0.32; 0.3 1.2 0.7 -0.2; 0.2 0.3 0.8 0.7; 0.58 0 1 0.36"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#06b6d4" d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(930, 52)">
+      <g class="bg-chip bg-chip-4">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="20s" repeatCount="indefinite" values="0 0; -150 100; 130 180; -110 220; 80 70; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.2 0.6 0.8 0.4; 0.28 1 0.72 0; 0.12 0.48 0.88 0.52; 0.38 0.2 0.62 0.8; 0.65 0 1 0.28"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#5fa04e" d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(1110, 44)">
+      <g class="bg-chip bg-chip-5">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="18s" repeatCount="indefinite" values="0 0; -120 120; 140 190; -70 90; 100 -40; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.32 1.3 0.68 0.3; 0.24 0 0.76 0.36; 0.18 0.8 0.82 0.2; 0.42 0.24 0.58 0.76; 0.64 0 1 0.32"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#3178c6" d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(210, 82)">
+      <g class="bg-chip bg-chip-6">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="21s" repeatCount="indefinite" values="0 0; 160 100; 280 180; 150 240; 70 120; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.26 1.2 0.74 0.32; 0.14 0 0.86 0.28; 0.22 1 0.78 0; 0.32 0.4 0.68 0.6; 0.56 0 1 0.4"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#47a248" d="M17.193 9.555c-1.264-5.58-4.252-7.414-4.573-8.115-.28-.394-.53-.954-.735-1.44-.036.495-.055.685-.523 1.184-.723.566-4.438 3.682-4.74 10.02-.282 5.912 4.27 9.435 4.888 9.884l.07.05A73.49 73.49 0 0111.91 24h.481c.114-1.032.284-2.056.51-3.07.417-.296.604-.463.85-.693a11.342 11.342 0 003.639-8.464c.01-.814-.103-1.662-.197-2.218zm-5.336 8.195s0-8.291.275-8.29c.213 0 .49 10.695.49 10.695-.381-.045-.765-1.76-.765-2.405z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(1180, 86)">
+      <g class="bg-chip bg-chip-7">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="17s" repeatCount="indefinite" values="0 0; -160 90; -280 170; -150 230; -60 110; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.28 1 0.72 0.28; 0.2 0 0.8 0.24; 0.16 0.6 0.84 0.4; 0.36 0.28 0.64 0.72; 0.6 0 1 0.36"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#764abc" d="M16.634 16.504c.87-.075 1.543-.84 1.5-1.754-.047-.914-.796-1.648-1.709-1.648h-.061a1.71 1.71 0 00-1.648 1.769c.03.479.226.869.494 1.153-1.048 2.038-2.621 3.536-5.005 4.795-1.603.838-3.296 1.154-4.944.93-1.378-.195-2.456-.81-3.116-1.799-.988-1.499-1.078-3.116-.255-4.734.6-1.17 1.499-2.023 2.099-2.443a9.96 9.96 0 01-.42-1.543C-.868 14.408-.416 18.752.932 20.805c1.004 1.498 3.057 2.456 5.304 2.456.6 0 1.23-.044 1.843-.194 3.897-.749 6.848-3.086 8.541-6.532zm5.348-3.746c-2.32-2.728-5.738-4.226-9.634-4.226h-.51c-.253-.554-.837-.899-1.498-.899h-.045c-.943 0-1.678.81-1.647 1.753.03.898.794 1.648 1.708 1.648h.074a1.69 1.69 0 001.499-1.049h.555c2.309 0 4.495.674 6.488 1.992 1.527 1.005 2.622 2.323 3.237 3.897.538 1.288.509 2.547-.045 3.597-.855 1.647-2.294 2.517-4.196 2.517-1.199 0-2.367-.375-2.967-.644-.36.298-.96.793-1.394 1.093 1.318.598 2.652.943 3.94.943 2.922 0 5.094-1.647 5.919-3.236.898-1.798.824-4.824-1.47-7.416zM6.49 17.042c.03.899.793 1.648 1.708 1.648h.06a1.688 1.688 0 001.648-1.768c0-.9-.779-1.647-1.693-1.647h-.06c-.06 0-.15 0-.226.029-1.243-2.098-1.768-4.347-1.572-6.772.12-1.828.72-3.417 1.797-4.735.9-1.124 2.593-1.68 3.747-1.708 3.236-.061 4.585 3.971 4.689 5.574l1.498.45C17.741 3.197 14.686.62 11.764.62 9.02.62 6.49 2.613 5.47 5.535 4.077 9.43 4.991 13.177 6.7 16.174c-.15.195-.24.539-.21.868z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(352, 172)">
+      <g class="bg-chip bg-chip-8">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="19s" repeatCount="indefinite" values="0 0; 140 -50; 260 80; 130 200; 50 100; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.3 1.4 0.7 0.32; 0.18 0 0.82 0.32; 0.24 1 0.76 -0.1; 0.28 0.32 0.72 0.68; 0.62 0 1 0.34"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#0055ff" d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(1068, 164)">
+      <g class="bg-chip bg-chip-9">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="18s" repeatCount="indefinite" values="0 0; -140 50; -260 160; -150 220; -70 110; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.24 0.8 0.76 0.2; 0.22 0 0.78 0.36; 0.14 0.4 0.86 0.6; 0.34 0.16 0.66 0.84; 0.58 0 1 0.38"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#dc382d" d="M22.71 13.145c-1.66 2.092-3.452 4.483-7.038 4.483-3.203 0-4.397-2.825-4.48-5.12.701 1.484 2.073 2.685 4.214 2.63 4.117-.133 6.94-3.852 6.94-7.239 0-4.05-3.022-6.972-8.268-6.972-3.752 0-8.4 1.428-11.455 3.685C2.59 6.937 3.885 9.958 4.35 9.626c2.648-1.904 4.748-3.13 6.784-3.744C8.12 9.244.886 17.05 0 18.425c.1 1.261 1.66 4.648 2.424 4.648.232 0 .431-.133.664-.365a100.49 100.49 0 0 0 5.54-6.765c.222 3.104 1.748 6.898 6.014 6.898 3.819 0 7.604-2.756 9.33-8.965.2-.764-.73-1.361-1.261-.73zm-4.349-5.013c0 1.959-1.926 2.922-3.685 2.922-.941 0-1.664-.247-2.235-.568 1.051-1.592 2.092-3.225 3.21-4.973 1.972.334 2.71 1.43 2.71 2.619z"/>
+        </svg>
+      </g>
+    </g>
+
+    <g class="bg-chip-slot" transform="translate(860, 212)">
+      <g class="bg-chip bg-chip-10">
+        <animateTransform attributeName="transform" type="translate" additive="sum" dur="17.5s" repeatCount="indefinite" values="0 0; 130 -80; 240 60; 110 190; 20 90; 0 0" keyTimes="0; 0.22; 0.44; 0.66; 0.88; 1" calcMode="spline" keySplines="0.29 1.5 0.71 0.29; 0.2 0 0.8 0.28; 0.26 1.1 0.74 -0.1; 0.3 0.36 0.7 0.64; 0.6 0 1 0.35"/>
+        <svg x="-8" y="-8" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#88ce02" d="M9.83,7.59C10.647,7.595 11.267,7.828 11.672,8.282C12.055,8.713 12.239,9.336 12.219,10.132L12.205,10.193C12.197,10.211 12.185,10.229 12.17,10.243C12.14,10.272 12.099,10.288 12.057,10.288L10.398,10.288C10.29,10.288 10.199,10.2 10.199,10.093C10.199,9.669 10.071,9.435 9.809,9.383L9.689,9.372C9.347,9.372 9.125,9.583 9.119,9.951C9.112,10.361 9.344,10.734 10.004,11.374C10.872,12.19 11.221,12.913 11.204,13.867C11.177,15.411 10.127,16.41 8.531,16.41C7.716,16.41 7.093,16.191 6.678,15.761C6.258,15.324 6.066,14.683 6.106,13.855C6.108,13.813 6.125,13.772 6.155,13.743C6.185,13.714 6.226,13.698 6.267,13.698L7.983,13.698C8.007,13.699 8.03,13.705 8.052,13.715C8.073,13.726 8.092,13.741 8.107,13.76C8.12,13.775 8.129,13.793 8.135,13.813C8.14,13.832 8.141,13.853 8.137,13.873C8.118,14.171 8.171,14.394 8.288,14.518C8.363,14.598 8.469,14.639 8.599,14.639C8.916,14.639 9.102,14.414 9.109,14.024C9.115,13.687 9.007,13.39 8.427,12.792C7.676,12.058 7.003,11.3 7.024,10.108C7.037,9.416 7.311,8.784 7.798,8.327C8.312,7.845 9.014,7.59 9.83,7.59ZM4.047,7.618C4.794,7.612 5.381,7.842 5.789,8.303C6.221,8.79 6.44,9.524 6.441,10.485C6.44,10.527 6.422,10.567 6.392,10.597C6.362,10.626 6.322,10.643 6.28,10.643L4.479,10.643C4.448,10.642 4.417,10.629 4.395,10.607C4.373,10.584 4.361,10.553 4.36,10.522C4.346,9.899 4.172,9.576 3.828,9.538L3.757,9.534C3.067,9.535 2.66,10.472 2.444,10.992C2.142,11.719 1.988,12.507 2.018,13.293C2.033,13.659 2.092,14.173 2.438,14.386C2.746,14.575 3.185,14.45 3.451,14.24C3.716,14.031 3.93,13.669 4.02,13.339C4.033,13.293 4.033,13.258 4.021,13.241C4.015,13.233 4.003,13.229 3.989,13.226L3.485,13.222C3.461,13.222 3.436,13.216 3.414,13.206C3.392,13.196 3.372,13.181 3.356,13.162C3.344,13.148 3.335,13.13 3.331,13.112C3.327,13.093 3.327,13.074 3.331,13.056L3.647,11.682C3.663,11.611 3.726,11.558 3.804,11.548L3.804,11.545L6.839,11.545C6.846,11.545 6.854,11.545 6.86,11.546C6.939,11.556 6.995,11.63 6.994,11.71L6.994,11.714L6.678,13.085C6.661,13.163 6.583,13.22 6.494,13.22L6.113,13.22C6.1,13.22 6.086,13.225 6.075,13.233C6.064,13.241 6.056,13.253 6.052,13.266C5.7,14.46 5.223,15.282 4.594,15.775C4.058,16.195 3.399,16.391 2.517,16.391C1.725,16.391 1.191,16.136 0.738,15.633C0.14,14.967 -0.107,13.879 0.043,12.566C0.313,10.103 1.589,7.618 4.047,7.618ZM21.016,7.75C23.026,7.75 24.03,8.662 23.999,10.461C23.962,12.569 22.678,14.119 20.745,14.477C20.47,14.527 20.191,14.547 19.912,14.545L18.978,14.541C18.963,14.541 18.948,14.547 18.937,14.558C18.926,14.568 18.92,14.583 18.92,14.598C18.92,14.608 18.922,14.618 18.928,14.627C18.933,14.636 18.941,14.643 18.95,14.648L19.744,15.062C19.809,15.096 19.835,15.153 19.82,15.226C19.815,15.249 19.618,16.139 19.613,16.159C19.596,16.237 19.533,16.282 19.442,16.282L17.739,16.282C17.715,16.282 17.69,16.277 17.668,16.267C17.646,16.257 17.626,16.241 17.61,16.223C17.598,16.208 17.589,16.191 17.585,16.173C17.58,16.155 17.581,16.135 17.585,16.116L19.481,7.875C19.5,7.789 19.581,7.751 19.653,7.751L21.016,7.75ZM17.273,7.762C17.292,7.77 17.31,7.781 17.324,7.795C17.338,7.81 17.351,7.828 17.358,7.847C17.366,7.866 17.369,7.886 17.369,7.906L17.358,16.119C17.361,16.138 17.36,16.158 17.355,16.177C17.35,16.196 17.34,16.213 17.328,16.228C17.313,16.245 17.295,16.259 17.274,16.268C17.254,16.277 17.232,16.282 17.21,16.281L15.397,16.281C15.377,16.282 15.356,16.277 15.337,16.27C15.318,16.262 15.3,16.25 15.286,16.236C15.272,16.221 15.26,16.204 15.253,16.185C15.245,16.166 15.241,16.146 15.241,16.125L15.28,15.328C15.282,15.241 15.28,15.217 15.229,15.211L15.161,15.209L13.447,15.209C13.323,15.209 13.314,15.22 13.27,15.334L12.914,16.191C12.882,16.252 12.818,16.281 12.722,16.281L10.927,16.281C10.818,16.281 10.74,16.173 10.781,16.072L14.499,7.873C14.524,7.824 14.562,7.75 14.648,7.75L17.214,7.75C17.234,7.75 17.254,7.754 17.273,7.762ZM15.5,9.985C15.492,9.953 15.466,9.956 15.445,9.998C15.43,10.028 15.416,10.06 15.405,10.091L14.121,13.274C14.114,13.294 14.109,13.31 14.105,13.322C14.104,13.328 14.103,13.335 14.104,13.341C14.105,13.347 14.108,13.353 14.111,13.358C14.115,13.363 14.12,13.367 14.126,13.37C14.131,13.373 14.137,13.376 14.143,13.376L15.215,13.39C15.334,13.38 15.34,13.374 15.352,13.253C15.354,13.21 15.506,10.022 15.5,9.985ZM20.112,9.582C20.097,9.582 20.083,9.588 20.072,9.599C20.061,9.609 20.055,9.624 20.054,9.639C20.054,9.649 20.057,9.659 20.062,9.668C20.068,9.677 20.075,9.685 20.084,9.69C20.097,9.697 20.869,10.104 20.926,10.135C20.968,10.158 20.969,10.198 20.955,10.267C20.948,10.298 20.415,12.642 20.416,12.644C20.419,12.647 20.435,12.655 20.515,12.655L20.551,12.655C21.446,12.619 21.934,11.561 21.952,10.534C21.961,9.979 21.772,9.638 21.429,9.588L21.358,9.582L20.112,9.582Z"/>
+        </svg>
+      </g>
+    </g>
+  </g>
+
+  <!-- Terminal card (left): simulated terminal/log display and progress bar. Editable text lives inside the nested <text> elements. -->
+  <g transform="translate(20, 25)">
     <rect width="320" height="250" rx="8" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
-    
-    <!-- Window Header -->
     <rect width="320" height="32" rx="8" fill="#1e293b"/>
-    <rect y="24" width="320" height="8" fill="#1e293b"/> <!-- Bottom square edge -->
+    <rect y="24" width="320" height="8" fill="#1e293b"/>
     <circle cx="20" cy="16" r="6" fill="#ef4444"/>
     <circle cx="42" cy="16" r="6" fill="#eab308"/>
     <circle cx="64" cy="16" r="6" fill="#22c55e"/>
     <text x="86" y="21" class="mono" font-size="12" fill="#94a3b8">parth_system.exe (~)</text>
 
-    <!-- Terminal Content (Animated) -->
     <svg x="15" y="45" width="290" height="150" viewBox="0 0 290 150">
       <g class="mono" font-size="13">
         <text y="15" class="log-1" fill="#94a3b8">[sys_init] -> Load core.modules.fullstack</text>
@@ -91,40 +273,33 @@
       </g>
     </svg>
 
-    <!-- Progress Bar (Animated) -->
     <rect x="15" y="210" width="290" height="22" rx="4" fill="#030712" stroke="#1e293b"/>
     <rect x="17" y="212" height="18" rx="3" fill="#22d3ee" opacity="0.85" class="progress-bar"/>
     <text x="25" y="225" class="mono log-6" font-size="11" fill="#030712" font-weight="600">SYSTEM DEPLOYING... [95% COMPLETED]</text>
   </g>
 
-  <!-- ========================================== -->
-  <!-- CENTER PANEL: NAME & TITLE                 -->
-  <!-- ========================================== -->
-  <g transform="translate(720, 140)">
-    <text text-anchor="middle" class="sans" font-size="48" font-weight="900" fill="#ffffff" letter-spacing="2" filter="url(#glow)">
-      <tspan fill="#38bdf8">PARTH</tspan> PIPERMINTWALA
-    </text>
-    <text y="40" text-anchor="middle" class="mono" font-size="20" fill="#94a3b8" letter-spacing="5">FULL STACK DEVELOPER</text>
-    
-    <!-- Animated divider -->
-    <rect x="-200" y="65" width="400" height="1" fill="#1e293b"/>
-    <rect x="-100" y="64" width="200" height="3" fill="#22d3ee" filter="url(#glow)">
-      <animate attributeName="x" values="-200; 0; -200" dur="4s" repeatCount="indefinite"/>
-    </rect>
+  <!-- Main title block (center): contains name, role, and decorative divider. Adjust text/tspans to change displayed name. -->
+  <g transform="translate(750, 140)">
+    <g class="title-block">
+
+      <text text-anchor="middle" class="sans title-main" font-size="50" font-weight="900" fill="#f8fafc" letter-spacing="2">
+        <tspan fill="#f8fafc">PARTH</tspan><tspan dx="12" fill="#cbd5e1">PIPERMINTWALA</tspan>
+      </text>
+      <text y="42" text-anchor="middle" class="mono title-sub" font-size="19" fill="#94a3b8" letter-spacing="5">FULL STACK DEVELOPER</text>
+      <text y="76" text-anchor="middle" class="mono title-sub" font-size="10" fill="#38bdf8" letter-spacing="4">BUILDING FAST, POLISHED WEB EXPERIENCES</text>
+
+      <rect x="-210" y="90" width="420" height="1" fill="#1e293b" opacity="1"/>
+      <rect x="-120" y="89" width="120" height="3" rx="2" fill="url(#dividerGradient)" filter="url(#glow)" class="divider-sweep">
+        <animate attributeName="x" values="-210; 90; -210" dur="4s" repeatCount="indefinite"/>
+      </rect>
+    </g>
   </g>
 
-  <!-- ========================================== -->
-  <!-- RIGHT PANEL: ORBITING TECH STACK           -->
-  <!-- ========================================== -->
-  <g transform="translate(1200, 150)">
-    
-    <!-- Outer Orbit Ring -->
+  <!-- Orbit badges (right): tech stack badges arranged on a rotating orbit. Modify or add nodes inside the orbit-group. -->
+  <g transform="translate(1250, 150)">
     <circle cx="0" cy="0" r="100" fill="none" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 6"/>
-    
-    <!-- Orbiting Group (Spins Forward) -->
+
     <g class="orbit-group">
-      
-      <!-- Connective Spokelines -->
       <line x1="0" y1="0" x2="0" y2="-100" stroke="#ffffff" stroke-width="1.5" opacity="0.4"/>
       <line x1="0" y1="0" x2="86.6" y2="-50" stroke="#06b6d4" stroke-width="1.5" opacity="0.4"/>
       <line x1="0" y1="0" x2="86.6" y2="50" stroke="#61dafb" stroke-width="1.5" opacity="0.4"/>
@@ -132,47 +307,41 @@
       <line x1="0" y1="0" x2="-86.6" y2="50" stroke="#764abc" stroke-width="1.5" opacity="0.4"/>
       <line x1="0" y1="0" x2="-86.6" y2="-50" stroke="#ef4444" stroke-width="1.5" opacity="0.4"/>
 
-      <!-- Next.js Node -->
       <g transform="translate(0, -100)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#ffffff" stroke-width="2"/>
           <text y="4" text-anchor="middle" class="sans" font-size="11" fill="#ffffff">NEXT</text>
         </g>
       </g>
-      
-      <!-- Tailwind Node (Replaced AWS) -->
+
       <g transform="translate(86.6, -50)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#06b6d4" stroke-width="2"/>
           <text y="3" text-anchor="middle" class="sans" font-size="8.5" fill="#06b6d4" font-weight="900">TAILWIND</text>
         </g>
       </g>
-      
-      <!-- React Node (Replaced TS) -->
+
       <g transform="translate(86.6, 50)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#61dafb" stroke-width="2"/>
           <text y="4" text-anchor="middle" class="sans" font-size="10" fill="#61dafb" font-weight="900">REACT</text>
         </g>
       </g>
-      
-      <!-- MongoDB Node -->
+
       <g transform="translate(0, 100)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
           <text y="4" text-anchor="middle" class="sans" font-size="11" fill="#10b981">MDB</text>
         </g>
       </g>
-      
-      <!-- Redux Node (Replaced SQL) -->
+
       <g transform="translate(-86.6, 50)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#764abc" stroke-width="2"/>
           <text y="4" text-anchor="middle" class="sans" font-size="10" fill="#764abc" font-weight="900">REDUX</text>
         </g>
       </g>
-      
-      <!-- Redis Node -->
+
       <g transform="translate(-86.6, -50)">
         <g class="orbit-node">
           <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="#0f172a" stroke="#ef4444" stroke-width="2"/>
@@ -181,10 +350,8 @@
       </g>
     </g>
 
-    <!-- Center Core: Node.js -->
     <circle cx="0" cy="0" r="42" fill="#030712" stroke="#22c55e" stroke-width="2" filter="url(#glow)"/>
     <text y="-4" text-anchor="middle" class="sans" font-size="14" font-weight="900" fill="#22c55e">NODE.JS</text>
     <text y="12" text-anchor="middle" class="mono" font-size="9" fill="#94a3b8">v21.x ACTIVE</text>
-    
   </g>
 </svg>
