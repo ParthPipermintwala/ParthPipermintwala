@@ -2,8 +2,8 @@ name: Profile README Generator
 
 on:
   schedule:
-    - cron: "30 18 * * *"
-  
+    - cron: "0 */12 * * *" # Runs every 12 hours
+
   workflow_dispatch:
 
 permissions:
@@ -12,47 +12,24 @@ permissions:
 jobs:
   update-profile:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          
+
       - name: Setup Git
         run: |
-          git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
+          git config --global user.name "github-actions[bot]"
+
       - name: Update README
         run: |
-          # Update the timestamp
           TIMESTAMP=$(date -u '+%a %b %d %H:%M:%S UTC %Y')
-          
-          # Check if README.md exists
-          if [ -f "README.md" ]; then
-            # Create a backup
-            cp README.md README.md.bak
-            
-            # Remove old timestamp lines
-            grep -v "<!-- Profile updated:" README.md.bak > README.md
-            
-            # Add new timestamp
-            echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
-            
-            # Check if there are changes
-            if ! git diff --quiet README.md; then
-              git add README.md
-              git commit -m "Auto-update profile README - $TIMESTAMP"
-              git push
-              echo "README updated successfully"
-            else
-              echo "No changes to commit"
-            fi
-            
-            # Clean up
-            rm -f README.md.bak
-          else
-            echo "README.md not found!"
-            exit 1
-          fi
+          sed -i '/<!-- Profile updated:/d' README.md
+          echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
+
+      - name: Commit changes
+        run: |
+          git add README.md
+          git commit -m "Auto-update profile README timestamp" || echo "No changes to commit"
+          git push

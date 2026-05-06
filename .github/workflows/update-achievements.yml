@@ -2,7 +2,7 @@ name: Update README Achievements
 
 on:
   schedule:
-    - cron: "30 18 * * *"  # Runs at 12:00 AM IST
+    - cron: "0 */12 * * *" # Runs every 12 hours
   workflow_dispatch:
 
 permissions:
@@ -31,16 +31,11 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
 
       - name: Commit changes
         run: |
-          if git diff --quiet README.md; then
-            echo "No README changes to commit"
-            exit 0
-          fi
-
           git add README.md
-          git commit -m "Update achievements section"
+          git commit -m "Auto-update achievements" || echo "No changes to commit"
           git push

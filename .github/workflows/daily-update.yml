@@ -2,15 +2,15 @@ name: Daily README Update
 
 on:
   schedule:
-    - cron: "30 18 * * *"
-  
+    - cron: "0 */12 * * *" # Runs every 12 hours
+
   # Allow manual trigger
   workflow_dispatch:
-  
+
   # Run on push to main branch (but skip if commit message contains 'Auto-update')
   push:
     branches:
-    - main
+      - main
 
 permissions:
   contents: write
@@ -19,10 +19,10 @@ permissions:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    
+
     # Skip if the push was from this action itself
     if: "!contains(github.event.head_commit.message, 'Auto-update README timestamp')"
-    
+
     steps:
       # Checkout the repository
       - name: Checkout repository
@@ -30,31 +30,31 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0
-          
+
       # Set up Git configuration
       - name: Setup Git
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-          
+
       # Update timestamp in README
       - name: Update README timestamp
         run: |
           # Get current UTC timestamp
           TIMESTAMP=$(date -u '+%a %b %d %H:%M:%S UTC %Y')
-          
+
           # Check if README.md exists
           if [ ! -f "README.md" ]; then
             echo "README.md not found!"
             exit 1
           fi
-          
+
           # Remove any existing timestamp lines
           sed -i '/<!-- Profile updated:/d' README.md
-          
+
           # Add new timestamp at the end
           echo "<!-- Profile updated: $TIMESTAMP -->" >> README.md
-          
+
       # Check if there are changes
       - name: Check for changes
         id: verify-diff
@@ -67,7 +67,7 @@ jobs:
             echo "Changes detected"
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
-          
+
       # Commit and push changes
       - name: Commit changes
         if: steps.verify-diff.outputs.changed == 'true'
