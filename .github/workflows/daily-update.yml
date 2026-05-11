@@ -2,7 +2,7 @@ name: Daily README Update
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Runs every 12 hours
+    - cron: "0 0 * * *" # Runs daily at midnight
 
   # Allow manual trigger
   workflow_dispatch:
