@@ -176,7 +176,7 @@
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-  <img src="./assets/streak.svg?v=25649660099-360-2-8" alt="GitHub Streak Stats" />
+  <img src="./assets/streak.svg?v=25711397982-391-2-8" alt="GitHub Streak Stats" />
 </a>
 </div>
 
@@ -270,4 +270,4 @@
   <sub>⭐ Star this repository if you found it helpful!</sub>
   
 </div>
-<!-- Profile updated: Mon May 11 06:19:57 UTC 2026 -->
+<!-- Profile updated: Tue May 12 02:13:43 UTC 2026 -->
