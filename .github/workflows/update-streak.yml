@@ -22,29 +22,33 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
-          ref: main
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: "22.x"
-
-      - name: Update streak SVG
-        run: node .github/scripts/update-streak.mjs
+          node-version: "22"
 
       - name: Configure Git
         run: |
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
 
+      # Pull FIRST before modifying files
       - name: Pull latest changes
         run: git pull origin main --rebase
+
+      - name: Update streak SVG
+        run: node .github/scripts/update-streak.mjs
 
       - name: Commit and Push changes
         run: |
           git add .
-          git commit -m "Auto-update streak stats" || echo "No changes to commit"
+
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+
+          git commit -m "Auto-update streak stats"
+
           git push origin main
