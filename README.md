@@ -176,7 +176,7 @@
 <h3 align="center">GitHub Streak</h3>
 <div align="center">
 <a href="https://github.com/parthpipermintwala">
-  <img src="./assets/streak.svg?v=28513986946-544-0-8" alt="GitHub Streak Stats" />
+  <img src="./assets/streak.svg?v=28537331035-544-0-8" alt="GitHub Streak Stats" />
 </a>
 </div>
 
